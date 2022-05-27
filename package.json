@@ -1,0 +1,24 @@
+{
+  "name": "i2cstyle",
+  "version": "0.0.1",
+  "description": "i2c-Inc Web Components provides a collection of professionally designed, every day UI components built on a framework-agnostic technology. Why spend hundreds of hours (or more) building a design system from scratch? Why make a component library that only works with one framework?",
+  "main": "i2cinc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "web",
+    "components"
+  ],
+  "author": "i2cinclab",
+  "license": "ISC",
+  "types": "./i2cinc.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/malikfaizanhaider/i2cstyle.git"
+  },
+  "bugs": {
+    "url": "https://github.com/malikfaizanhaider/i2cstyle/issues"
+  },
+  "homepage": "https://github.com/malikfaizanhaider/i2cstyle#readme"
+}
