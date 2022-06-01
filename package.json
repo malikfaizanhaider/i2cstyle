@@ -1,6 +1,6 @@
 {
   "name": "i2cstyle",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "i2c-Inc Web Components provides a collection of professionally designed, every day UI components built on a framework-agnostic technology. Why spend hundreds of hours (or more) building a design system from scratch? Why make a component library that only works with one framework?",
   "main": "i2cinc.js",
   "scripts": {
