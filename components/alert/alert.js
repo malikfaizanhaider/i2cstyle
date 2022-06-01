@@ -1,6 +1,6 @@
 import {
   alert_default
-} from "../../chunks/chunk.JJ2Y4Q56.js";
+} from "../../chunks/chunk.NMBKQRYJ.js";
 import "../../chunks/chunk.NVGT36PI.js";
 import "../../chunks/chunk.EVK2ASE6.js";
 import "../../chunks/chunk.BD26TKS4.js";

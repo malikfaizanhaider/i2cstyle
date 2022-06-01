@@ -1,11 +1,11 @@
 import { LitElement } from 'lit';
-import type SlDropdown from '../dropdown/dropdown';
-import type SlInput from '../input/input';
-export default class SlColorPicker extends LitElement {
+import type i2cDropdown from '../dropdown/dropdown';
+import type i2cInput from '../input/input';
+export default class i2cColorPicker extends LitElement {
     static styles: import("lit").CSSResult;
-    input: SlInput;
+    input: i2cInput;
     previewButton: HTMLButtonElement;
-    dropdown: SlDropdown;
+    dropdown: i2cDropdown;
     private isSafeValue;
     private lastValueEmitted;
     private inputValue;
@@ -83,6 +83,6 @@ export default class SlColorPicker extends LitElement {
 }
 declare global {
     interface HTMLElementTagNameMap {
-        'i2c-color-picker': SlColorPicker;
+        'i2c-color-picker': i2cColorPicker;
     }
 }

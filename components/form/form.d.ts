@@ -1,5 +1,5 @@
 import { LitElement } from 'lit';
-export default class SlForm extends LitElement {
+export default class i2cForm extends LitElement {
     static styles: import("lit").CSSResult;
     form: HTMLElement;
     private formControls;
@@ -15,6 +15,6 @@ export default class SlForm extends LitElement {
 }
 declare global {
     interface HTMLElementTagNameMap {
-        'i2c-form': SlForm;
+        'i2c-form': i2cForm;
     }
 }

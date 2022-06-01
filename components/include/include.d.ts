@@ -1,5 +1,5 @@
 import { LitElement } from 'lit';
-export default class SlInclude extends LitElement {
+export default class i2cInclude extends LitElement {
     static styles: import("lit").CSSResult;
     src: string;
     mode: 'cors' | 'no-cors' | 'same-origin';
@@ -10,6 +10,6 @@ export default class SlInclude extends LitElement {
 }
 declare global {
     interface HTMLElementTagNameMap {
-        'i2c-include': SlInclude;
+        'i2c-include': i2cInclude;
     }
 }

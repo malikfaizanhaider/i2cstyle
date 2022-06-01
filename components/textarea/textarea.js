@@ -1,6 +1,6 @@
 import {
   textarea_default
-} from "../../chunks/chunk.X36MIRXK.js";
+} from "../../chunks/chunk.4SVMEN4R.js";
 import "../../chunks/chunk.LLZCD55S.js";
 import "../../chunks/chunk.BD26TKS4.js";
 import "../../chunks/chunk.FMCX45AD.js";

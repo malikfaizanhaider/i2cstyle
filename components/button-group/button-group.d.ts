@@ -1,5 +1,5 @@
 import { LitElement } from 'lit';
-export default class SlButtonGroup extends LitElement {
+export default class i2cButtonGroup extends LitElement {
     static styles: import("lit").CSSResult;
     defaultSlot: HTMLSlotElement;
     label: string;
@@ -12,6 +12,6 @@ export default class SlButtonGroup extends LitElement {
 }
 declare global {
     interface HTMLElementTagNameMap {
-        'i2c-button-group': SlButtonGroup;
+        'i2c-button-group': i2cButtonGroup;
     }
 }

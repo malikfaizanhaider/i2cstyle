@@ -1,5 +1,5 @@
 import { LitElement } from 'lit';
-export default class SlProgressBar extends LitElement {
+export default class i2cProgressBar extends LitElement {
     static styles: import("lit").CSSResult;
     percentage: number;
     indeterminate: boolean;
@@ -7,6 +7,6 @@ export default class SlProgressBar extends LitElement {
 }
 declare global {
     interface HTMLElementTagNameMap {
-        'i2c-progress-bar': SlProgressBar;
+        'i2c-progress-bar': i2cProgressBar;
     }
 }

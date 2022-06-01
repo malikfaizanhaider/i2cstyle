@@ -1,5 +1,5 @@
 import { LitElement } from 'lit';
-export default class SlRange extends LitElement {
+export default class i2cRange extends LitElement {
     static styles: import("lit").CSSResult;
     input: HTMLInputElement;
     output: HTMLOutputElement;
@@ -38,6 +38,6 @@ export default class SlRange extends LitElement {
 }
 declare global {
     interface HTMLElementTagNameMap {
-        'i2c-range': SlRange;
+        'i2c-range': i2cRange;
     }
 }

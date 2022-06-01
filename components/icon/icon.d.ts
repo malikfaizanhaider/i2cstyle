@@ -1,5 +1,5 @@
 import { LitElement } from 'lit';
-export default class SlIcon extends LitElement {
+export default class i2cIcon extends LitElement {
     static styles: import("lit").CSSResult;
     private svg;
     name: string;
@@ -18,6 +18,6 @@ export default class SlIcon extends LitElement {
 }
 declare global {
     interface HTMLElementTagNameMap {
-        'i2c-icon': SlIcon;
+        'i2c-icon': i2cIcon;
     }
 }

@@ -1,5 +1,5 @@
 import { LitElement } from 'lit';
-export default class SlSwitch extends LitElement {
+export default class i2cSwitch extends LitElement {
     static styles: import("lit").CSSResult;
     input: HTMLInputElement;
     private switchId;
@@ -28,6 +28,6 @@ export default class SlSwitch extends LitElement {
 }
 declare global {
     interface HTMLElementTagNameMap {
-        'i2c-switch': SlSwitch;
+        'i2c-switch': i2cSwitch;
     }
 }

@@ -1,5 +1,5 @@
 import { LitElement } from 'lit';
-export default class SlRelativeTime extends LitElement {
+export default class i2cRelativeTime extends LitElement {
     private updateTimeout;
     private isoTime;
     private relativeTime;
@@ -15,6 +15,6 @@ export default class SlRelativeTime extends LitElement {
 }
 declare global {
     interface HTMLElementTagNameMap {
-        'i2c-relative-time': SlRelativeTime;
+        'i2c-relative-time': i2cRelativeTime;
     }
 }

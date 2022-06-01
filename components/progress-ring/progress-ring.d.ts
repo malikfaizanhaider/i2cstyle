@@ -1,5 +1,5 @@
 import { LitElement } from 'lit';
-export default class SlProgressRing extends LitElement {
+export default class i2cProgressRing extends LitElement {
     static styles: import("lit").CSSResult;
     indicator: SVGCircleElement;
     size: number;
@@ -11,6 +11,6 @@ export default class SlProgressRing extends LitElement {
 }
 declare global {
     interface HTMLElementTagNameMap {
-        'i2c-progress-ring': SlProgressRing;
+        'i2c-progress-ring': i2cProgressRing;
     }
 }

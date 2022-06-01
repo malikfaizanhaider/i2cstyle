@@ -1,5 +1,5 @@
 import { LitElement } from 'lit';
-export default class SlResponsiveMedia extends LitElement {
+export default class i2cResponsiveMedia extends LitElement {
     static styles: import("lit").CSSResult;
     aspectRatio: string;
     fit: 'cover' | 'contain';
@@ -7,6 +7,6 @@ export default class SlResponsiveMedia extends LitElement {
 }
 declare global {
     interface HTMLElementTagNameMap {
-        'i2c-responsive-media': SlResponsiveMedia;
+        'i2c-responsive-media': i2cResponsiveMedia;
     }
 }

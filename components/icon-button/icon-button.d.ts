@@ -1,5 +1,5 @@
 import { LitElement } from 'lit';
-export default class SlIconButton extends LitElement {
+export default class i2cIconButton extends LitElement {
     static styles: import("lit").CSSResult;
     button: HTMLButtonElement;
     name: string;
@@ -13,6 +13,6 @@ export default class SlIconButton extends LitElement {
 }
 declare global {
     interface HTMLElementTagNameMap {
-        'i2c-icon-button': SlIconButton;
+        'i2c-icon-button': i2cIconButton;
     }
 }

@@ -1,5 +1,5 @@
 import { LitElement } from 'lit';
-export default class SlTab extends LitElement {
+export default class i2cTab extends LitElement {
     static styles: import("lit").CSSResult;
     tab: HTMLElement;
     private componentId;
@@ -14,6 +14,6 @@ export default class SlTab extends LitElement {
 }
 declare global {
     interface HTMLElementTagNameMap {
-        'i2c-tab': SlTab;
+        'i2c-tab': i2cTab;
     }
 }

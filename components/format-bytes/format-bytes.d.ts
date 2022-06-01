@@ -1,5 +1,5 @@
 import { LitElement } from 'lit';
-export default class SlFormatBytes extends LitElement {
+export default class i2cFormatBytes extends LitElement {
     value: number;
     unit: 'bytes' | 'bits';
     locale: string;
@@ -7,6 +7,6 @@ export default class SlFormatBytes extends LitElement {
 }
 declare global {
     interface HTMLElementTagNameMap {
-        'i2c-format-bytes': SlFormatBytes;
+        'i2c-format-bytes': i2cFormatBytes;
     }
 }

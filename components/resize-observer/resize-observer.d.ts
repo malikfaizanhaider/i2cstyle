@@ -1,5 +1,5 @@
 import { LitElement } from 'lit';
-export default class SlResizeObserver extends LitElement {
+export default class i2cResizeObserver extends LitElement {
     static styles: import("lit").CSSResult;
     private resizeObserver;
     private observedElements;
@@ -10,6 +10,6 @@ export default class SlResizeObserver extends LitElement {
 }
 declare global {
     interface HTMLElementTagNameMap {
-        'i2c-resize-observer': SlResizeObserver;
+        'i2c-resize-observer': i2cResizeObserver;
     }
 }

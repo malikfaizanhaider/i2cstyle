@@ -1,5 +1,5 @@
 import { LitElement } from 'lit';
-export default class SlDrawer extends LitElement {
+export default class i2cDrawer extends LitElement {
     static styles: import("lit").CSSResult;
     drawer: HTMLElement;
     panel: HTMLElement;
@@ -26,6 +26,6 @@ export default class SlDrawer extends LitElement {
 }
 declare global {
     interface HTMLElementTagNameMap {
-        'i2c-drawer': SlDrawer;
+        'i2c-drawer': i2cDrawer;
     }
 }

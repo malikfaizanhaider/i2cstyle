@@ -1,5 +1,5 @@
 import { LitElement } from 'lit';
-export default class SlFormatDate extends LitElement {
+export default class i2cFormatDate extends LitElement {
     date: Date | string;
     locale: string;
     weekday: 'narrow' | 'short' | 'long';
@@ -17,6 +17,6 @@ export default class SlFormatDate extends LitElement {
 }
 declare global {
     interface HTMLElementTagNameMap {
-        'i2c-format-date': SlFormatDate;
+        'i2c-format-date': i2cFormatDate;
     }
 }

@@ -1,4 +1,4 @@
-/* C:/Users/fhaider/AppData/Local/Temp/tmp-19900-mb0NkIyTsFzx/DSM-V2/src/styles/base.css */
+/* C:/Users/fhaider/AppData/Local/Temp/tmp-19996-tLCw6pde1ujB/DSM-V2/src/styles/base.css */
 .i2c-toast-stack {
   position: fixed;
   top: 0;
@@ -93,11 +93,13 @@
   --i2c-border-radius-x-large: 1rem;
   --i2c-border-radius-circle: 50%;
   --i2c-border-radius-pill: 9999px;
-  --i2c-shadow-x-small: 0 1px 0 #0d131e0d;
-  --i2c-shadow-small: 0 1px 2px #0d131e1a;
-  --i2c-shadow-medium: 0 2px 4px #0d131e1a;
-  --i2c-shadow-large: 0 2px 8px #0d131e1a;
-  --i2c-shadow-x-large: 0 4px 16px #0d131e1a;
+  --i2c-shadow-x-small: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  --i2c-shadow-small: 0px 1px 3px rgba(16, 24, 40, 0.1), 0px 1px 2px rgba(16, 24, 40, 0.06);
+  --i2c-shadow-medium: 0px 4px 8px -2px rgba(16, 24, 40, 0.1), 0px 2px 4px -2px rgba(16, 24, 40, 0.06);
+  --i2c-shadow-large: 0px 12px 16px -4px rgba(16, 24, 40, 0.08), 0px 4px 6px -2px rgba(16, 24, 40, 0.03);
+  --i2c-shadow-x-large: 0px 20px 24px -4px rgba(16, 24, 40, 0.08), 0px 8px 8px -4px rgba(16, 24, 40, 0.03);
+  --i2c-shadow-xx-large: 0px 24px 48px -12px rgba(16, 24, 40, 0.18);
+  --i2c-shadow-xxx-large: 0px 32px 64px -12px rgba(16, 24, 40, 0.14);
   --i2c-spacing-xxx-small: 0.125rem;
   --i2c-spacing-xx-small: 0.25rem;
   --i2c-spacing-x-small: 0.5rem;
@@ -121,7 +123,7 @@
     monospace;
   --i2c-font-sans:
     -apple-system,
-    Roboto,
+    Inter,
     sans-serif,
     "Apple Color Emoji",
     "Segoe UI Emoji",
@@ -134,11 +136,11 @@
   --i2c-font-size-x-small: 0.75rem;
   --i2c-font-size-small: 0.875rem;
   --i2c-font-size-medium: 1rem;
-  --i2c-font-size-large: 1.25rem;
-  --i2c-font-size-x-large: 1.5rem;
-  --i2c-font-size-xx-large: 2.25rem;
-  --i2c-font-size-xxx-large: 3rem;
-  --i2c-font-size-xxxx-large: 4.5rem;
+  --i2c-font-size-large: 1.125rem;
+  --i2c-font-size-x-large: 1.25rem;
+  --i2c-font-size-xx-large: 1.5rem;
+  --i2c-font-size-xxx-large: 1.875rem;
+  --i2c-font-size-xxxx-large: 2.25rem;
   --i2c-font-weight-light: 300;
   --i2c-font-weight-normal: 400;
   --i2c-font-weight-semibold: 500;

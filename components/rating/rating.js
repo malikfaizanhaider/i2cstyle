@@ -1,6 +1,6 @@
 import {
   rating_default
-} from "../../chunks/chunk.TN3YP7ED.js";
+} from "../../chunks/chunk.LAV2TIA2.js";
 import "../../chunks/chunk.T56CG5BM.js";
 import "../../chunks/chunk.DA3UDEH5.js";
 import "../../chunks/chunk.XAZSQ3AT.js";

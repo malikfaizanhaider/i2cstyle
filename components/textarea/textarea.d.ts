@@ -1,5 +1,5 @@
 import { LitElement } from 'lit';
-export default class SlTextarea extends LitElement {
+export default class i2cTextarea extends LitElement {
     static styles: import("lit").CSSResult;
     input: HTMLTextAreaElement;
     private inputId;
@@ -60,6 +60,6 @@ export default class SlTextarea extends LitElement {
 }
 declare global {
     interface HTMLElementTagNameMap {
-        'i2c-textarea': SlTextarea;
+        'i2c-textarea': i2cTextarea;
     }
 }

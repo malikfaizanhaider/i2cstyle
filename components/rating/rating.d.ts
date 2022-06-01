@@ -1,5 +1,5 @@
 import { LitElement } from 'lit';
-export default class SlRating extends LitElement {
+export default class i2cRating extends LitElement {
     static styles: import("lit").CSSResult;
     rating: HTMLElement;
     private hoverValue;
@@ -32,6 +32,6 @@ export default class SlRating extends LitElement {
 }
 declare global {
     interface HTMLElementTagNameMap {
-        'i2c-rating': SlRating;
+        'i2c-rating': i2cRating;
     }
 }

@@ -1,5 +1,5 @@
 import { LitElement } from 'lit';
-export default class SlCheckbox extends LitElement {
+export default class i2cCheckbox extends LitElement {
     static styles: import("lit").CSSResult;
     input: HTMLInputElement;
     private inputId;
@@ -28,6 +28,6 @@ export default class SlCheckbox extends LitElement {
 }
 declare global {
     interface HTMLElementTagNameMap {
-        'i2c-checkbox': SlCheckbox;
+        'i2c-checkbox': i2cCheckbox;
     }
 }

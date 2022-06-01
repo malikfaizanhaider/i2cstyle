@@ -1,8 +1,8 @@
 import {
   details_default
-} from "../../chunks/chunk.BXKRBOEX.js";
+} from "../../chunks/chunk.ELVCSJKO.js";
 import "../../chunks/chunk.XAZSQ3AT.js";
-import "../../chunks/chunk.JTTAQFSC.js";
+import "../../chunks/chunk.5K67TIAC.js";
 import "../../chunks/chunk.EPTJRW4G.js";
 import "../../chunks/chunk.4JLHW6VH.js";
 import "../../chunks/chunk.NERC4GGL.js";

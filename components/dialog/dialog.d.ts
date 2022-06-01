@@ -1,5 +1,5 @@
 import { LitElement } from 'lit';
-export default class SlDialog extends LitElement {
+export default class i2cDialog extends LitElement {
     static styles: import("lit").CSSResult;
     dialog: HTMLElement;
     panel: HTMLElement;
@@ -24,6 +24,6 @@ export default class SlDialog extends LitElement {
 }
 declare global {
     interface HTMLElementTagNameMap {
-        'i2c-dialog': SlDialog;
+        'i2c-dialog': i2cDialog;
     }
 }

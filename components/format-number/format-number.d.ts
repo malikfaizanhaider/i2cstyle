@@ -1,5 +1,5 @@
 import { LitElement } from 'lit';
-export default class SlFormatNumber extends LitElement {
+export default class i2cFormatNumber extends LitElement {
     value: number;
     locale: string;
     type: 'currency' | 'decimal' | 'percent';
@@ -15,6 +15,6 @@ export default class SlFormatNumber extends LitElement {
 }
 declare global {
     interface HTMLElementTagNameMap {
-        'i2c-format-number': SlFormatNumber;
+        'i2c-format-number': i2cFormatNumber;
     }
 }

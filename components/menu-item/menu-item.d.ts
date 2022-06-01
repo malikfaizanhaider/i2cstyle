@@ -1,5 +1,5 @@
 import { LitElement } from 'lit';
-export default class SlMenuItem extends LitElement {
+export default class i2cMenuItem extends LitElement {
     static styles: import("lit").CSSResult;
     menuItem: HTMLElement;
     private hasFocus;
@@ -16,6 +16,6 @@ export default class SlMenuItem extends LitElement {
 }
 declare global {
     interface HTMLElementTagNameMap {
-        'i2c-menu-item': SlMenuItem;
+        'i2c-menu-item': i2cMenuItem;
     }
 }

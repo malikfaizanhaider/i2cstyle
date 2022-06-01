@@ -1,5 +1,5 @@
 import { LitElement } from 'lit';
-export default class SlAnimation extends LitElement {
+export default class i2cAnimation extends LitElement {
     static styles: import("lit").CSSResult;
     private animation;
     private hasStarted;
@@ -34,6 +34,6 @@ export default class SlAnimation extends LitElement {
 }
 declare global {
     interface HTMLElementTagNameMap {
-        'i2c-animation': SlAnimation;
+        'i2c-animation': i2cAnimation;
     }
 }

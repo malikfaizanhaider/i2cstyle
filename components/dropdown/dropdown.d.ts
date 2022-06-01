@@ -1,6 +1,6 @@
 import { LitElement } from 'lit';
-import type SlMenu from '../menu/menu';
-export default class SlDropdown extends LitElement {
+import type i2cMenu from '../menu/menu';
+export default class i2cDropdown extends LitElement {
     static styles: import("lit").CSSResult;
     trigger: HTMLElement;
     panel: HTMLElement;
@@ -19,7 +19,7 @@ export default class SlDropdown extends LitElement {
     firstUpdated(): void;
     disconnectedCallback(): void;
     focusOnTrigger(): void;
-    getMenu(): SlMenu;
+    getMenu(): i2cMenu;
     handleDocumentKeyDown(event: KeyboardEvent): void;
     handleDocumentMouseDown(event: MouseEvent): void;
     handleMenuItemActivate(event: CustomEvent): void;
@@ -38,6 +38,6 @@ export default class SlDropdown extends LitElement {
 }
 declare global {
     interface HTMLElementTagNameMap {
-        'i2c-dropdown': SlDropdown;
+        'i2c-dropdown': i2cDropdown;
     }
 }

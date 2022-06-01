@@ -1,5 +1,5 @@
 import { LitElement } from 'lit';
-export default class SlRadioGroup extends LitElement {
+export default class i2cRadioGroup extends LitElement {
     static styles: import("lit").CSSResult;
     label: string;
     noFieldset: boolean;
@@ -7,6 +7,6 @@ export default class SlRadioGroup extends LitElement {
 }
 declare global {
     interface HTMLElementTagNameMap {
-        'i2c-radio-group': SlRadioGroup;
+        'i2c-radio-group': i2cRadioGroup;
     }
 }

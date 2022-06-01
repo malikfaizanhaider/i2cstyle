@@ -1,13 +1,13 @@
 import { LitElement, TemplateResult } from 'lit';
-import type SlDropdown from '../dropdown/dropdown';
-import type SlMenu from '../menu/menu';
-import type SlMenuItem from '../menu-item/menu-item';
-export default class SlSelect extends LitElement {
+import type i2cDropdown from '../dropdown/dropdown';
+import type i2cMenu from '../menu/menu';
+import type i2cMenuItem from '../menu-item/menu-item';
+export default class i2cSelect extends LitElement {
     static styles: import("lit").CSSResult;
-    dropdown: SlDropdown;
-    box: SlDropdown;
+    dropdown: i2cDropdown;
+    box: i2cDropdown;
     input: HTMLInputElement;
-    menu: SlMenu;
+    menu: i2cMenu;
     private inputId;
     private helpTextId;
     private labelId;
@@ -37,8 +37,8 @@ export default class SlSelect extends LitElement {
     disconnectedCallback(): void;
     reportValidity(): boolean;
     setCustomValidity(message: string): void;
-    getItemLabel(item: SlMenuItem): string;
-    getItems(): SlMenuItem[];
+    getItemLabel(item: i2cMenuItem): string;
+    getItems(): i2cMenuItem[];
     getValueAsArray(): string[];
     handleBlur(): void;
     handleClearClick(event: MouseEvent): void;
@@ -60,6 +60,6 @@ export default class SlSelect extends LitElement {
 }
 declare global {
     interface HTMLElementTagNameMap {
-        'i2c-select': SlSelect;
+        'i2c-select': i2cSelect;
     }
 }

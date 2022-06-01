@@ -1,5 +1,5 @@
 import { LitElement } from 'lit';
-export default class SlBadge extends LitElement {
+export default class i2cBadge extends LitElement {
     static styles: import("lit").CSSResult;
     type: 'primary' | 'success' | 'info' | 'warning' | 'danger';
     pill: boolean;
@@ -8,6 +8,6 @@ export default class SlBadge extends LitElement {
 }
 declare global {
     interface HTMLElementTagNameMap {
-        'i2c-badge': SlBadge;
+        'i2c-badge': i2cBadge;
     }
 }

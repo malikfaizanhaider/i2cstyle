@@ -1,6 +1,6 @@
 import {
   menu_default
-} from "../../chunks/chunk.HPHCDX2V.js";
+} from "../../chunks/chunk.6EG7Y2Q4.js";
 import "../../chunks/chunk.FMCX45AD.js";
 import "../../chunks/chunk.I4TE3TJV.js";
 import "../../chunks/chunk.5PIDMFOE.js";

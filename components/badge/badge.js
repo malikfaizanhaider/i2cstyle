@@ -1,6 +1,6 @@
 import {
   badge_default
-} from "../../chunks/chunk.6MNR4FIA.js";
+} from "../../chunks/chunk.NZCZNZK7.js";
 import "../../chunks/chunk.YXKHB4AC.js";
 import "../../chunks/chunk.VIWFLAGR.js";
 import "../../chunks/chunk.5PIDMFOE.js";

@@ -1,5 +1,5 @@
 import { LitElement } from 'lit';
-export default class SlAvatar extends LitElement {
+export default class i2cAvatar extends LitElement {
     static styles: import("lit").CSSResult;
     private hasError;
     image: string;
@@ -10,6 +10,6 @@ export default class SlAvatar extends LitElement {
 }
 declare global {
     interface HTMLElementTagNameMap {
-        'i2c-avatar': SlAvatar;
+        'i2c-avatar': i2cAvatar;
     }
 }

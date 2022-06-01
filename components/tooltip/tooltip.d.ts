@@ -1,5 +1,5 @@
 import { LitElement } from 'lit';
-export default class SlTooltip extends LitElement {
+export default class i2cTooltip extends LitElement {
     static styles: import("lit").CSSResult;
     positioner: HTMLElement;
     tooltip: HTMLElement;
@@ -36,6 +36,6 @@ export default class SlTooltip extends LitElement {
 }
 declare global {
     interface HTMLElementTagNameMap {
-        'i2c-tooltip': SlTooltip;
+        'i2c-tooltip': i2cTooltip;
     }
 }

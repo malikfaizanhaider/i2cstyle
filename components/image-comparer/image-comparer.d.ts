@@ -1,5 +1,5 @@
 import { LitElement } from 'lit';
-export default class SlImageComparer extends LitElement {
+export default class i2cImageComparer extends LitElement {
     static styles: import("lit").CSSResult;
     base: HTMLElement;
     handle: HTMLElement;
@@ -11,6 +11,6 @@ export default class SlImageComparer extends LitElement {
 }
 declare global {
     interface HTMLElementTagNameMap {
-        'i2c-image-comparer': SlImageComparer;
+        'i2c-image-comparer': i2cImageComparer;
     }
 }

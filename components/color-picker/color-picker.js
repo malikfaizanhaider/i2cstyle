@@ -1,6 +1,6 @@
 import {
   color_picker_default
-} from "../../chunks/chunk.5X6FIAJE.js";
+} from "../../chunks/chunk.XFPXQ2GS.js";
 import "../../chunks/chunk.T56CG5BM.js";
 import "../../chunks/chunk.DA3UDEH5.js";
 import "../../chunks/chunk.ORQOX5KX.js";

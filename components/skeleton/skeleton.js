@@ -1,6 +1,6 @@
 import {
   skeleton_default
-} from "../../chunks/chunk.2NPUL3G6.js";
+} from "../../chunks/chunk.DTUCYSRE.js";
 import "../../chunks/chunk.YXKHB4AC.js";
 import "../../chunks/chunk.VIWFLAGR.js";
 import "../../chunks/chunk.5PIDMFOE.js";

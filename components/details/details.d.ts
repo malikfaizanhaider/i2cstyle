@@ -1,6 +1,6 @@
 import { LitElement } from 'lit';
 import '../icon/icon';
-export default class SlDetails extends LitElement {
+export default class i2cDetails extends LitElement {
     static styles: import("lit").CSSResult;
     details: HTMLElement;
     header: HTMLElement;
@@ -21,6 +21,6 @@ export default class SlDetails extends LitElement {
 }
 declare global {
     interface HTMLElementTagNameMap {
-        'i2c-details': SlDetails;
+        'i2c-details': i2cDetails;
     }
 }

@@ -1,5 +1,5 @@
 import { LitElement } from 'lit';
-export default class SlCard extends LitElement {
+export default class i2cCard extends LitElement {
     static styles: import("lit").CSSResult;
     private hasFooter;
     private hasImage;
@@ -9,6 +9,6 @@ export default class SlCard extends LitElement {
 }
 declare global {
     interface HTMLElementTagNameMap {
-        'i2c-card': SlCard;
+        'i2c-card': i2cCard;
     }
 }

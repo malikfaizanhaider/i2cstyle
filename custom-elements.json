@@ -4,113 +4,6 @@
   "modules": [
     {
       "kind": "javascript-module",
-      "path": "src/components/badge/badge.ts",
-      "declarations": [
-        {
-          "kind": "class",
-          "description": "",
-          "name": "default",
-          "cssParts": [
-            {
-              "description": "The base wrapper",
-              "name": "base"
-            }
-          ],
-          "slots": [
-            {
-              "description": "The badge's content.",
-              "name": ""
-            }
-          ],
-          "members": [
-            {
-              "kind": "field",
-              "name": "type",
-              "type": {
-                "text": "'primary' | 'success' | 'info' | 'warning' | 'danger'"
-              },
-              "description": "The badge's type.",
-              "default": "'primary'"
-            },
-            {
-              "kind": "field",
-              "name": "pill",
-              "type": {
-                "text": "boolean"
-              },
-              "description": "Draws a pill-style badge with rounded edges.",
-              "default": "false"
-            },
-            {
-              "kind": "field",
-              "name": "pulse",
-              "type": {
-                "text": "boolean"
-              },
-              "description": "Makes the badge pulsate to draw attention.",
-              "default": "false"
-            }
-          ],
-          "attributes": [
-            {
-              "name": "type",
-              "type": {
-                "text": "'primary' | 'success' | 'info' | 'warning' | 'danger'"
-              },
-              "description": "The badge's type.",
-              "default": "'primary'",
-              "fieldName": "type"
-            },
-            {
-              "name": "pill",
-              "type": {
-                "text": "boolean"
-              },
-              "description": "Draws a pill-style badge with rounded edges.",
-              "default": "false",
-              "fieldName": "pill"
-            },
-            {
-              "name": "pulse",
-              "type": {
-                "text": "boolean"
-              },
-              "description": "Makes the badge pulsate to draw attention.",
-              "default": "false",
-              "fieldName": "pulse"
-            }
-          ],
-          "superclass": {
-            "name": "LitElement",
-            "package": "lit"
-          },
-          "since": "2.0",
-          "status": "stable",
-          "tagName": "i2c-badge",
-          "customElement": true
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "default",
-          "declaration": {
-            "name": "default",
-            "module": "src/components/badge/badge.ts"
-          }
-        },
-        {
-          "kind": "custom-element-definition",
-          "name": "i2c-badge",
-          "declaration": {
-            "name": "SlBadge",
-            "module": "src/components/badge/badge.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
       "path": "src/components/avatar/avatar.ts",
       "declarations": [
         {
@@ -252,7 +145,7 @@
           "kind": "custom-element-definition",
           "name": "i2c-avatar",
           "declaration": {
-            "name": "SlAvatar",
+            "name": "i2cAvatar",
             "module": "src/components/avatar/avatar.ts"
           }
         }
@@ -349,7 +242,7 @@
               "type": {
                 "text": "number"
               },
-              "description": "The length of time, in milliseconds, the alert will show before closing itself. If the user interacts with\r\nthe alert before it closes (e.g. moves the mouse over it), the timer will restart. Defaults to `Infinity`."
+              "description": "The length of time, in milliseconds, the alert will show before closing itself. If the user interacts with\nthe alert before it closes (e.g. moves the mouse over it), the timer will restart. Defaults to `Infinity`."
             },
             {
               "kind": "method",
@@ -364,7 +257,7 @@
             {
               "kind": "method",
               "name": "toast",
-              "description": "Displays the alert as a toast notification. This will move the alert out of its position in the DOM and, when\r\ndismissed, it will be removed from the DOM completely. By storing a reference to the alert, you can reuse it by\r\ncalling this method again. The returned promise will resolve after the alert is hidden."
+              "description": "Displays the alert as a toast notification. This will move the alert out of its position in the DOM and, when\ndismissed, it will be removed from the DOM completely. By storing a reference to the alert, you can reuse it by\ncalling this method again. The returned promise will resolve after the alert is hidden."
             },
             {
               "kind": "method",
@@ -438,7 +331,7 @@
               "type": {
                 "text": "number"
               },
-              "description": "The length of time, in milliseconds, the alert will show before closing itself. If the user interacts with\r\nthe alert before it closes (e.g. moves the mouse over it), the timer will restart. Defaults to `Infinity`.",
+              "description": "The length of time, in milliseconds, the alert will show before closing itself. If the user interacts with\nthe alert before it closes (e.g. moves the mouse over it), the timer will restart. Defaults to `Infinity`.",
               "fieldName": "duration"
             }
           ],
@@ -478,7 +371,7 @@
           "kind": "custom-element-definition",
           "name": "i2c-alert",
           "declaration": {
-            "name": "SlAlert",
+            "name": "i2cAlert",
             "module": "src/components/alert/alert.ts"
           }
         }
@@ -538,7 +431,7 @@
               "type": {
                 "text": "boolean"
               },
-              "description": "Plays the animation. When omitted, the animation will be paused. This prop will be automatically removed when the\r\nanimation finishes or gets canceled.",
+              "description": "Plays the animation. When omitted, the animation will be paused. This prop will be automatically removed when the\nanimation finishes or gets canceled.",
               "default": "false"
             },
             {
@@ -574,7 +467,7 @@
               "type": {
                 "text": "string"
               },
-              "description": "The easing function to use for the animation. This can be a Shoelace easing function or a custom easing function\r\nsuch as `cubic-bezier(0, 1, .76, 1.14)`.",
+              "description": "The easing function to use for the animation. This can be a i2cInc easing function or a custom easing function\nsuch as `cubic-bezier(0, 1, .76, 1.14)`.",
               "default": "'linear'"
             },
             {
@@ -626,7 +519,7 @@
               "type": {
                 "text": "number"
               },
-              "description": "Sets the animation's playback rate. The default is `1`, which plays the animation at a normal speed. Setting this\r\nto `2`, for example, will double the animation's speed. A negative value can be used to reverse the animation. This\r\nvalue can be changed without causing the animation to restart.",
+              "description": "Sets the animation's playback rate. The default is `1`, which plays the animation at a normal speed. Setting this\nto `2`, for example, will double the animation's speed. A negative value can be used to reverse the animation. This\nvalue can be changed without causing the animation to restart.",
               "default": "1"
             },
             {
@@ -709,7 +602,7 @@
               "type": {
                 "text": "boolean"
               },
-              "description": "Plays the animation. When omitted, the animation will be paused. This prop will be automatically removed when the\r\nanimation finishes or gets canceled.",
+              "description": "Plays the animation. When omitted, the animation will be paused. This prop will be automatically removed when the\nanimation finishes or gets canceled.",
               "default": "false",
               "fieldName": "play"
             },
@@ -745,7 +638,7 @@
               "type": {
                 "text": "string"
               },
-              "description": "The easing function to use for the animation. This can be a Shoelace easing function or a custom easing function\r\nsuch as `cubic-bezier(0, 1, .76, 1.14)`.",
+              "description": "The easing function to use for the animation. This can be a i2cInc easing function or a custom easing function\nsuch as `cubic-bezier(0, 1, .76, 1.14)`.",
               "default": "'linear'",
               "fieldName": "easing"
             },
@@ -789,7 +682,7 @@
               "type": {
                 "text": "number"
               },
-              "description": "Sets the animation's playback rate. The default is `1`, which plays the animation at a normal speed. Setting this\r\nto `2`, for example, will double the animation's speed. A negative value can be used to reverse the animation. This\r\nvalue can be changed without causing the animation to restart.",
+              "description": "Sets the animation's playback rate. The default is `1`, which plays the animation at a normal speed. Setting this\nto `2`, for example, will double the animation's speed. A negative value can be used to reverse the animation. This\nvalue can be changed without causing the animation to restart.",
               "default": "1",
               "fieldName": "playbackRate"
             }
@@ -817,7 +710,7 @@
           "kind": "custom-element-definition",
           "name": "i2c-animation",
           "declaration": {
-            "name": "SlAnimation",
+            "name": "i2cAnimation",
             "module": "src/components/animation/animation.ts"
           }
         }
@@ -861,6 +754,243 @@
           "declaration": {
             "name": "getEasingNames",
             "module": "src/components/animation/animations.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/badge/badge.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "default",
+          "cssParts": [
+            {
+              "description": "The base wrapper",
+              "name": "base"
+            }
+          ],
+          "slots": [
+            {
+              "description": "The badge's content.",
+              "name": ""
+            }
+          ],
+          "members": [
+            {
+              "kind": "field",
+              "name": "type",
+              "type": {
+                "text": "'primary' | 'success' | 'info' | 'warning' | 'danger'"
+              },
+              "description": "The badge's type.",
+              "default": "'primary'"
+            },
+            {
+              "kind": "field",
+              "name": "pill",
+              "type": {
+                "text": "boolean"
+              },
+              "description": "Draws a pill-style badge with rounded edges.",
+              "default": "false"
+            },
+            {
+              "kind": "field",
+              "name": "pulse",
+              "type": {
+                "text": "boolean"
+              },
+              "description": "Makes the badge pulsate to draw attention.",
+              "default": "false"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "type",
+              "type": {
+                "text": "'primary' | 'success' | 'info' | 'warning' | 'danger'"
+              },
+              "description": "The badge's type.",
+              "default": "'primary'",
+              "fieldName": "type"
+            },
+            {
+              "name": "pill",
+              "type": {
+                "text": "boolean"
+              },
+              "description": "Draws a pill-style badge with rounded edges.",
+              "default": "false",
+              "fieldName": "pill"
+            },
+            {
+              "name": "pulse",
+              "type": {
+                "text": "boolean"
+              },
+              "description": "Makes the badge pulsate to draw attention.",
+              "default": "false",
+              "fieldName": "pulse"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "since": "2.0",
+          "status": "stable",
+          "tagName": "i2c-badge",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "name": "default",
+            "module": "src/components/badge/badge.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "i2c-badge",
+          "declaration": {
+            "name": "i2cBadge",
+            "module": "src/components/badge/badge.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/button-group/button-group.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "default",
+          "cssParts": [
+            {
+              "description": "The component's base wrapper.",
+              "name": "base"
+            }
+          ],
+          "slots": [
+            {
+              "description": "One or more `<i2c-button>` elements to display in the button group.",
+              "name": ""
+            }
+          ],
+          "members": [
+            {
+              "kind": "field",
+              "name": "defaultSlot",
+              "type": {
+                "text": "HTMLSlotElement"
+              }
+            },
+            {
+              "kind": "field",
+              "name": "label",
+              "type": {
+                "text": "string"
+              },
+              "description": "A label to use for the button group's `aria-label` attribute.",
+              "default": "''"
+            },
+            {
+              "kind": "method",
+              "name": "handleFocus",
+              "parameters": [
+                {
+                  "name": "event",
+                  "type": {
+                    "text": "CustomEvent"
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "handleBlur",
+              "parameters": [
+                {
+                  "name": "event",
+                  "type": {
+                    "text": "CustomEvent"
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "handleMouseOver",
+              "parameters": [
+                {
+                  "name": "event",
+                  "type": {
+                    "text": "CustomEvent"
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "handleMouseOut",
+              "parameters": [
+                {
+                  "name": "event",
+                  "type": {
+                    "text": "CustomEvent"
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "handleSlotChange"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "label",
+              "type": {
+                "text": "string"
+              },
+              "description": "A label to use for the button group's `aria-label` attribute.",
+              "default": "''",
+              "fieldName": "label"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "since": "2.0",
+          "status": "stable",
+          "tagName": "i2c-button-group",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "name": "default",
+            "module": "src/components/button-group/button-group.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "i2c-button-group",
+          "declaration": {
+            "name": "i2cButtonGroup",
+            "module": "src/components/button-group/button-group.ts"
           }
         }
       ]
@@ -1392,138 +1522,8 @@
           "kind": "custom-element-definition",
           "name": "i2c-card",
           "declaration": {
-            "name": "SlCard",
+            "name": "i2cCard",
             "module": "src/components/card/card.ts"
-          }
-        }
-      ]
-    },
-    {
-      "kind": "javascript-module",
-      "path": "src/components/button-group/button-group.ts",
-      "declarations": [
-        {
-          "kind": "class",
-          "description": "",
-          "name": "default",
-          "cssParts": [
-            {
-              "description": "The component's base wrapper.",
-              "name": "base"
-            }
-          ],
-          "slots": [
-            {
-              "description": "One or more `<i2c-button>` elements to display in the button group.",
-              "name": ""
-            }
-          ],
-          "members": [
-            {
-              "kind": "field",
-              "name": "defaultSlot",
-              "type": {
-                "text": "HTMLSlotElement"
-              }
-            },
-            {
-              "kind": "field",
-              "name": "label",
-              "type": {
-                "text": "string"
-              },
-              "description": "A label to use for the button group's `aria-label` attribute.",
-              "default": "''"
-            },
-            {
-              "kind": "method",
-              "name": "handleFocus",
-              "parameters": [
-                {
-                  "name": "event",
-                  "type": {
-                    "text": "CustomEvent"
-                  }
-                }
-              ]
-            },
-            {
-              "kind": "method",
-              "name": "handleBlur",
-              "parameters": [
-                {
-                  "name": "event",
-                  "type": {
-                    "text": "CustomEvent"
-                  }
-                }
-              ]
-            },
-            {
-              "kind": "method",
-              "name": "handleMouseOver",
-              "parameters": [
-                {
-                  "name": "event",
-                  "type": {
-                    "text": "CustomEvent"
-                  }
-                }
-              ]
-            },
-            {
-              "kind": "method",
-              "name": "handleMouseOut",
-              "parameters": [
-                {
-                  "name": "event",
-                  "type": {
-                    "text": "CustomEvent"
-                  }
-                }
-              ]
-            },
-            {
-              "kind": "method",
-              "name": "handleSlotChange"
-            }
-          ],
-          "attributes": [
-            {
-              "name": "label",
-              "type": {
-                "text": "string"
-              },
-              "description": "A label to use for the button group's `aria-label` attribute.",
-              "default": "''",
-              "fieldName": "label"
-            }
-          ],
-          "superclass": {
-            "name": "LitElement",
-            "package": "lit"
-          },
-          "since": "2.0",
-          "status": "stable",
-          "tagName": "i2c-button-group",
-          "customElement": true
-        }
-      ],
-      "exports": [
-        {
-          "kind": "js",
-          "name": "default",
-          "declaration": {
-            "name": "default",
-            "module": "src/components/button-group/button-group.ts"
-          }
-        },
-        {
-          "kind": "custom-element-definition",
-          "name": "i2c-button-group",
-          "declaration": {
-            "name": "SlButtonGroup",
-            "module": "src/components/button-group/button-group.ts"
           }
         }
       ]
@@ -1827,7 +1827,7 @@
           "kind": "custom-element-definition",
           "name": "i2c-checkbox",
           "declaration": {
-            "name": "SlCheckbox",
+            "name": "i2cCheckbox",
             "module": "src/components/checkbox/checkbox.ts"
           }
         }
@@ -1922,7 +1922,7 @@
               "kind": "field",
               "name": "input",
               "type": {
-                "text": "SlInput"
+                "text": "i2cInput"
               }
             },
             {
@@ -1936,7 +1936,7 @@
               "kind": "field",
               "name": "dropdown",
               "type": {
-                "text": "SlDropdown"
+                "text": "i2cDropdown"
               }
             },
             {
@@ -2025,7 +2025,7 @@
               "type": {
                 "text": "'hex' | 'rgb' | 'hsl'"
               },
-              "description": "The format to use for the display value. If opacity is enabled, these will translate to HEXA, RGBA, and HSLA\r\nrespectively. The color picker will always accept user input in any format (including CSS color names) and convert\r\nit to the desired format.",
+              "description": "The format to use for the display value. If opacity is enabled, these will translate to HEXA, RGBA, and HSLA\nrespectively. The color picker will always accept user input in any format (including CSS color names) and convert\nit to the desired format.",
               "default": "'hex'"
             },
             {
@@ -2079,7 +2079,7 @@
               "type": {
                 "text": "boolean"
               },
-              "description": "This will be true when the control is in an invalid state. Validity is determined by the `setCustomValidity()`\r\nmethod using the browser's constraint validation API.",
+              "description": "This will be true when the control is in an invalid state. Validity is determined by the `setCustomValidity()`\nmethod using the browser's constraint validation API.",
               "default": "false"
             },
             {
@@ -2088,7 +2088,7 @@
               "type": {
                 "text": "boolean"
               },
-              "description": "Enable this option to prevent the panel from being clipped when the component is placed inside a container with\r\n`overflow: auto|scroll`.",
+              "description": "Enable this option to prevent the panel from being clipped when the component is placed inside a container with\n`overflow: auto|scroll`.",
               "default": "false"
             },
             {
@@ -2115,7 +2115,7 @@
               "type": {
                 "text": "string[]"
               },
-              "description": "An array of predefined color swatches to display. Can include any format the color picker can parse, including\r\nHEX(A), RGB(A), HSL(A), and CSS color names."
+              "description": "An array of predefined color swatches to display. Can include any format the color picker can parse, including\nHEX(A), RGB(A), HSL(A), and CSS color names."
             },
             {
               "kind": "method",
@@ -2381,7 +2381,7 @@
               "type": {
                 "text": "'hex' | 'rgb' | 'hsl'"
               },
-              "description": "The format to use for the display value. If opacity is enabled, these will translate to HEXA, RGBA, and HSLA\r\nrespectively. The color picker will always accept user input in any format (including CSS color names) and convert\r\nit to the desired format.",
+              "description": "The format to use for the display value. If opacity is enabled, these will translate to HEXA, RGBA, and HSLA\nrespectively. The color picker will always accept user input in any format (including CSS color names) and convert\nit to the desired format.",
               "default": "'hex'",
               "fieldName": "format"
             },
@@ -2435,7 +2435,7 @@
               "type": {
                 "text": "boolean"
               },
-              "description": "This will be true when the control is in an invalid state. Validity is determined by the `setCustomValidity()`\r\nmethod using the browser's constraint validation API.",
+              "description": "This will be true when the control is in an invalid state. Validity is determined by the `setCustomValidity()`\nmethod using the browser's constraint validation API.",
               "default": "false",
               "fieldName": "invalid"
             },
@@ -2444,7 +2444,7 @@
               "type": {
                 "text": "boolean"
               },
-              "description": "Enable this option to prevent the panel from being clipped when the component is placed inside a container with\r\n`overflow: auto|scroll`.",
+              "description": "Enable this option to prevent the panel from being clipped when the component is placed inside a container with\n`overflow: auto|scroll`.",
               "default": "false",
               "fieldName": "hoist"
             },
@@ -2496,7 +2496,7 @@
           "kind": "custom-element-definition",
           "name": "i2c-color-picker",
           "declaration": {
-            "name": "SlColorPicker",
+            "name": "i2cColorPicker",
             "module": "src/components/color-picker/color-picker.ts"
           }
         }
@@ -2708,7 +2708,7 @@
           "kind": "custom-element-definition",
           "name": "i2c-details",
           "declaration": {
-            "name": "SlDetails",
+            "name": "i2cDetails",
             "module": "src/components/details/details.ts"
           }
         }
@@ -2855,7 +2855,7 @@
               "type": {
                 "text": "string"
               },
-              "description": "The dialog's label as displayed in the header. You should always include a relevant label even when using\r\n`no-header`, as it is required for proper accessibility.",
+              "description": "The dialog's label as displayed in the header. You should always include a relevant label even when using\n`no-header`, as it is required for proper accessibility.",
               "default": "''"
             },
             {
@@ -2864,7 +2864,7 @@
               "type": {
                 "text": "boolean"
               },
-              "description": "Disables the header. This will also remove the default close button, so please ensure you provide an easy,\r\naccessible way for users to dismiss the dialog.",
+              "description": "Disables the header. This will also remove the default close button, so please ensure you provide an easy,\naccessible way for users to dismiss the dialog.",
               "default": "false"
             },
             {
@@ -2944,7 +2944,7 @@
               "type": {
                 "text": "string"
               },
-              "description": "The dialog's label as displayed in the header. You should always include a relevant label even when using\r\n`no-header`, as it is required for proper accessibility.",
+              "description": "The dialog's label as displayed in the header. You should always include a relevant label even when using\n`no-header`, as it is required for proper accessibility.",
               "default": "''",
               "fieldName": "label"
             },
@@ -2953,7 +2953,7 @@
               "type": {
                 "text": "boolean"
               },
-              "description": "Disables the header. This will also remove the default close button, so please ensure you provide an easy,\r\naccessible way for users to dismiss the dialog.",
+              "description": "Disables the header. This will also remove the default close button, so please ensure you provide an easy,\naccessible way for users to dismiss the dialog.",
               "default": "false",
               "fieldName": "noHeader"
             }
@@ -3006,7 +3006,7 @@
           "kind": "custom-element-definition",
           "name": "i2c-dialog",
           "declaration": {
-            "name": "SlDialog",
+            "name": "i2cDialog",
             "module": "src/components/dialog/dialog.ts"
           }
         }
@@ -3153,7 +3153,7 @@
               "type": {
                 "text": "string"
               },
-              "description": "The drawer's label as displayed in the header. You should always include a relevant label even when using\r\n`no-header`, as it is required for proper accessibility.",
+              "description": "The drawer's label as displayed in the header. You should always include a relevant label even when using\n`no-header`, as it is required for proper accessibility.",
               "default": "''"
             },
             {
@@ -3171,7 +3171,7 @@
               "type": {
                 "text": "boolean"
               },
-              "description": "By default, the drawer slides out of its containing block (usually the viewport). To make the drawer slide out of\r\nits parent element, set this prop and add `position: relative` to the parent.",
+              "description": "By default, the drawer slides out of its containing block (usually the viewport). To make the drawer slide out of\nits parent element, set this prop and add `position: relative` to the parent.",
               "default": "false"
             },
             {
@@ -3180,7 +3180,7 @@
               "type": {
                 "text": "boolean"
               },
-              "description": "Removes the header. This will also remove the default close button, so please ensure you provide an easy,\r\naccessible way for users to dismiss the drawer.",
+              "description": "Removes the header. This will also remove the default close button, so please ensure you provide an easy,\naccessible way for users to dismiss the drawer.",
               "default": "false"
             },
             {
@@ -3260,7 +3260,7 @@
               "type": {
                 "text": "string"
               },
-              "description": "The drawer's label as displayed in the header. You should always include a relevant label even when using\r\n`no-header`, as it is required for proper accessibility.",
+              "description": "The drawer's label as displayed in the header. You should always include a relevant label even when using\n`no-header`, as it is required for proper accessibility.",
               "default": "''",
               "fieldName": "label"
             },
@@ -3278,7 +3278,7 @@
               "type": {
                 "text": "boolean"
               },
-              "description": "By default, the drawer slides out of its containing block (usually the viewport). To make the drawer slide out of\r\nits parent element, set this prop and add `position: relative` to the parent.",
+              "description": "By default, the drawer slides out of its containing block (usually the viewport). To make the drawer slide out of\nits parent element, set this prop and add `position: relative` to the parent.",
               "default": "false",
               "fieldName": "contained"
             },
@@ -3287,7 +3287,7 @@
               "type": {
                 "text": "boolean"
               },
-              "description": "Removes the header. This will also remove the default close button, so please ensure you provide an easy,\r\naccessible way for users to dismiss the drawer.",
+              "description": "Removes the header. This will also remove the default close button, so please ensure you provide an easy,\naccessible way for users to dismiss the drawer.",
               "default": "false",
               "fieldName": "noHeader"
             }
@@ -3364,7 +3364,7 @@
           "kind": "custom-element-definition",
           "name": "i2c-drawer",
           "declaration": {
-            "name": "SlDrawer",
+            "name": "i2cDrawer",
             "module": "src/components/drawer/drawer.ts"
           }
         }
@@ -3450,9 +3450,9 @@
               "kind": "field",
               "name": "placement",
               "type": {
-                "text": "| 'top'\r\n    | 'top-start'\r\n    | 'top-end'\r\n    | 'bottom'\r\n    | 'bottom-start'\r\n    | 'bottom-end'\r\n    | 'right'\r\n    | 'right-start'\r\n    | 'right-end'\r\n    | 'left'\r\n    | 'left-start'\r\n    | 'left-end'"
+                "text": "| 'top'\n    | 'top-start'\n    | 'top-end'\n    | 'bottom'\n    | 'bottom-start'\n    | 'bottom-end'\n    | 'right'\n    | 'right-start'\n    | 'right-end'\n    | 'left'\n    | 'left-start'\n    | 'left-end'"
               },
-              "description": "The preferred placement of the dropdown panel. Note that the actual placement may vary as needed to keep the panel\r\ninside of the viewport.",
+              "description": "The preferred placement of the dropdown panel. Note that the actual placement may vary as needed to keep the panel\ninside of the viewport.",
               "default": "'bottom-start'"
             },
             {
@@ -3470,7 +3470,7 @@
               "type": {
                 "text": "boolean"
               },
-              "description": "By default, the dropdown is closed when an item is selected. This attribute will keep it open instead. Useful for\r\ncontrols that allow multiple selections.",
+              "description": "By default, the dropdown is closed when an item is selected. This attribute will keep it open instead. Useful for\ncontrols that allow multiple selections.",
               "default": "false"
             },
             {
@@ -3505,7 +3505,7 @@
               "type": {
                 "text": "boolean"
               },
-              "description": "Enable this option to prevent the panel from being clipped when the component is placed inside a container with\r\n`overflow: auto|scroll`.",
+              "description": "Enable this option to prevent the panel from being clipped when the component is placed inside a container with\n`overflow: auto|scroll`.",
               "default": "false"
             },
             {
@@ -3617,7 +3617,7 @@
             {
               "kind": "method",
               "name": "reposition",
-              "description": "Instructs the dropdown menu to reposition. Useful when the position or size of the trigger changes when the menu\r\nis activated."
+              "description": "Instructs the dropdown menu to reposition. Useful when the position or size of the trigger changes when the menu\nis activated."
             },
             {
               "kind": "method",
@@ -3655,9 +3655,9 @@
             {
               "name": "placement",
               "type": {
-                "text": "| 'top'\r\n    | 'top-start'\r\n    | 'top-end'\r\n    | 'bottom'\r\n    | 'bottom-start'\r\n    | 'bottom-end'\r\n    | 'right'\r\n    | 'right-start'\r\n    | 'right-end'\r\n    | 'left'\r\n    | 'left-start'\r\n    | 'left-end'"
+                "text": "| 'top'\n    | 'top-start'\n    | 'top-end'\n    | 'bottom'\n    | 'bottom-start'\n    | 'bottom-end'\n    | 'right'\n    | 'right-start'\n    | 'right-end'\n    | 'left'\n    | 'left-start'\n    | 'left-end'"
               },
-              "description": "The preferred placement of the dropdown panel. Note that the actual placement may vary as needed to keep the panel\r\ninside of the viewport.",
+              "description": "The preferred placement of the dropdown panel. Note that the actual placement may vary as needed to keep the panel\ninside of the viewport.",
               "default": "'bottom-start'",
               "fieldName": "placement"
             },
@@ -3675,7 +3675,7 @@
               "type": {
                 "text": "boolean"
               },
-              "description": "By default, the dropdown is closed when an item is selected. This attribute will keep it open instead. Useful for\r\ncontrols that allow multiple selections.",
+              "description": "By default, the dropdown is closed when an item is selected. This attribute will keep it open instead. Useful for\ncontrols that allow multiple selections.",
               "default": "false",
               "fieldName": "stayOpenOnSelect"
             },
@@ -3702,7 +3702,7 @@
               "type": {
                 "text": "boolean"
               },
-              "description": "Enable this option to prevent the panel from being clipped when the component is placed inside a container with\r\n`overflow: auto|scroll`.",
+              "description": "Enable this option to prevent the panel from being clipped when the component is placed inside a container with\n`overflow: auto|scroll`.",
               "default": "false",
               "fieldName": "hoist"
             }
@@ -3740,7 +3740,7 @@
           "kind": "custom-element-definition",
           "name": "i2c-dropdown",
           "declaration": {
-            "name": "SlDropdown",
+            "name": "i2cDropdown",
             "module": "src/components/dropdown/dropdown.ts"
           }
         }
@@ -3804,7 +3804,7 @@
             {
               "kind": "method",
               "name": "submit",
-              "description": "Submits the form. If all controls are valid, the `i2c-submit` event will be emitted and the promise will resolve\r\nwith `true`. If any form control is invalid, the promise will resolve with `false` and no event will be emitted."
+              "description": "Submits the form. If all controls are valid, the `i2c-submit` event will be emitted and the promise will resolve\nwith `true`. If any form control is invalid, the promise will resolve with `false` and no event will be emitted."
             },
             {
               "kind": "method",
@@ -3892,7 +3892,7 @@
           "kind": "custom-element-definition",
           "name": "i2c-form",
           "declaration": {
-            "name": "SlForm",
+            "name": "i2cForm",
             "module": "src/components/form/form.ts"
           }
         }
@@ -3985,7 +3985,7 @@
           "kind": "custom-element-definition",
           "name": "i2c-format-bytes",
           "declaration": {
-            "name": "SlFormatBytes",
+            "name": "i2cFormatBytes",
             "module": "src/components/format-bytes/format-bytes.ts"
           }
         }
@@ -4236,7 +4236,7 @@
           "kind": "custom-element-definition",
           "name": "i2c-format-date",
           "declaration": {
-            "name": "SlFormatDate",
+            "name": "i2cFormatDate",
             "module": "src/components/format-date/format-date.ts"
           }
         }
@@ -4463,7 +4463,7 @@
           "kind": "custom-element-definition",
           "name": "i2c-format-number",
           "declaration": {
-            "name": "SlFormatNumber",
+            "name": "i2cFormatNumber",
             "module": "src/components/format-number/format-number.ts"
           }
         }
@@ -4624,7 +4624,7 @@
           "kind": "custom-element-definition",
           "name": "i2c-icon",
           "declaration": {
-            "name": "SlIcon",
+            "name": "i2cIcon",
             "module": "src/components/icon/icon.ts"
           }
         }
@@ -4687,7 +4687,7 @@
             {
               "name": "icon",
               "type": {
-                "text": "SlIcon"
+                "text": "i2cIcon"
               }
             }
           ]
@@ -4699,7 +4699,7 @@
             {
               "name": "icon",
               "type": {
-                "text": "SlIcon"
+                "text": "i2cIcon"
               }
             }
           ]
@@ -4871,7 +4871,7 @@
               "type": {
                 "text": "string"
               },
-              "description": "A description that gets read by screen readers and other assistive devices. For optimal accessibility, you should\r\nalways include a label that describes what the icon button does.",
+              "description": "A description that gets read by screen readers and other assistive devices. For optimal accessibility, you should\nalways include a label that describes what the icon button does.",
               "default": "''"
             },
             {
@@ -4914,7 +4914,7 @@
               "type": {
                 "text": "string"
               },
-              "description": "A description that gets read by screen readers and other assistive devices. For optimal accessibility, you should\r\nalways include a label that describes what the icon button does.",
+              "description": "A description that gets read by screen readers and other assistive devices. For optimal accessibility, you should\nalways include a label that describes what the icon button does.",
               "default": "''",
               "fieldName": "label"
             },
@@ -4954,7 +4954,7 @@
           "kind": "custom-element-definition",
           "name": "i2c-icon-button",
           "declaration": {
-            "name": "SlIconButton",
+            "name": "i2cIconButton",
             "module": "src/components/icon-button/icon-button.ts"
           }
         }
@@ -5110,7 +5110,7 @@
           "kind": "custom-element-definition",
           "name": "i2c-image-comparer",
           "declaration": {
-            "name": "SlImageComparer",
+            "name": "i2cImageComparer",
             "module": "src/components/image-comparer/image-comparer.ts"
           }
         }
@@ -5148,7 +5148,7 @@
               "type": {
                 "text": "boolean"
               },
-              "description": "Allows included scripts to be executed. You must ensure the content you're including is trusted, otherwise this\r\noption can lead to XSS vulnerabilities in your app!",
+              "description": "Allows included scripts to be executed. You must ensure the content you're including is trusted, otherwise this\noption can lead to XSS vulnerabilities in your app!",
               "default": "false"
             },
             {
@@ -5204,7 +5204,7 @@
               "type": {
                 "text": "boolean"
               },
-              "description": "Allows included scripts to be executed. You must ensure the content you're including is trusted, otherwise this\r\noption can lead to XSS vulnerabilities in your app!",
+              "description": "Allows included scripts to be executed. You must ensure the content you're including is trusted, otherwise this\noption can lead to XSS vulnerabilities in your app!",
               "default": "false",
               "fieldName": "allowScripts"
             }
@@ -5232,7 +5232,7 @@
           "kind": "custom-element-definition",
           "name": "i2c-include",
           "declaration": {
-            "name": "SlInclude",
+            "name": "i2cInclude",
             "module": "src/components/include/include.ts"
           }
         }
@@ -5582,7 +5582,7 @@
               "type": {
                 "text": "boolean"
               },
-              "description": "This will be true when the control is in an invalid state. Validity is determined by props such as `type`,\r\n`required`, `minlength`, `maxlength`, and `pattern` using the browser's constraint validation API.",
+              "description": "This will be true when the control is in an invalid state. Validity is determined by props such as `type`,\n`required`, `minlength`, `maxlength`, and `pattern` using the browser's constraint validation API.",
               "default": "false"
             },
             {
@@ -5972,7 +5972,7 @@
               "type": {
                 "text": "boolean"
               },
-              "description": "This will be true when the control is in an invalid state. Validity is determined by props such as `type`,\r\n`required`, `minlength`, `maxlength`, and `pattern` using the browser's constraint validation API.",
+              "description": "This will be true when the control is in an invalid state. Validity is determined by props such as `type`,\n`required`, `minlength`, `maxlength`, and `pattern` using the browser's constraint validation API.",
               "default": "false",
               "fieldName": "invalid"
             },
@@ -6051,7 +6051,7 @@
           "kind": "custom-element-definition",
           "name": "i2c-input",
           "declaration": {
-            "name": "SlInput",
+            "name": "i2cInput",
             "module": "src/components/input/input.ts"
           }
         }
@@ -6096,7 +6096,7 @@
               "kind": "field",
               "name": "items",
               "type": {
-                "text": "SlMenuItem[]"
+                "text": "i2cMenuItem[]"
               },
               "privacy": "private",
               "default": "[]"
@@ -6129,7 +6129,7 @@
                   }
                 }
               ],
-              "description": "Initiates type-to-select logic, which automatically selects an option based on what the user is currently typing.\r\nThe key passed will be appended to the internal query and the selection will be updated. After a brief period, the\r\ninternal query is cleared automatically. This method is intended to be used with the keydown event. Useful for\r\nenabling type-to-select when the menu doesn't have focus."
+              "description": "Initiates type-to-select logic, which automatically selects an option based on what the user is currently typing.\nThe key passed will be appended to the internal query and the selection will be updated. After a brief period, the\ninternal query is cleared automatically. This method is intended to be used with the keydown event. Useful for\nenabling type-to-select when the menu doesn't have focus."
             },
             {
               "kind": "method",
@@ -6146,7 +6146,7 @@
                 {
                   "name": "item",
                   "type": {
-                    "text": "SlMenuItem"
+                    "text": "i2cMenuItem"
                   }
                 }
               ]
@@ -6183,7 +6183,7 @@
           "events": [
             {
               "type": {
-                "text": "{ item: SlMenuItem }"
+                "text": "{ item: i2cMenuItem }"
               },
               "description": "Emitted when a menu item is selected.",
               "name": "i2c-select"
@@ -6212,7 +6212,7 @@
           "kind": "custom-element-definition",
           "name": "i2c-menu",
           "declaration": {
-            "name": "SlMenu",
+            "name": "i2cMenu",
             "module": "src/components/menu/menu.ts"
           }
         }
@@ -6259,7 +6259,7 @@
           "kind": "custom-element-definition",
           "name": "i2c-menu-divider",
           "declaration": {
-            "name": "SlMenuDivider",
+            "name": "i2cMenuDivider",
             "module": "src/components/menu-divider/menu-divider.ts"
           }
         }
@@ -6444,7 +6444,7 @@
           "kind": "custom-element-definition",
           "name": "i2c-menu-item",
           "declaration": {
-            "name": "SlMenuItem",
+            "name": "i2cMenuItem",
             "module": "src/components/menu-item/menu-item.ts"
           }
         }
@@ -6497,7 +6497,7 @@
           "kind": "custom-element-definition",
           "name": "i2c-menu-label",
           "declaration": {
-            "name": "SlMenuLabel",
+            "name": "i2cMenuLabel",
             "module": "src/components/menu-label/menu-label.ts"
           }
         }
@@ -6612,7 +6612,7 @@
           "kind": "custom-element-definition",
           "name": "i2c-progress-bar",
           "declaration": {
-            "name": "SlProgressBar",
+            "name": "i2cProgressBar",
             "module": "src/components/progress-bar/progress-bar.ts"
           }
         }
@@ -6742,7 +6742,7 @@
           "kind": "custom-element-definition",
           "name": "i2c-progress-ring",
           "declaration": {
-            "name": "SlProgressRing",
+            "name": "i2cProgressRing",
             "module": "src/components/progress-ring/progress-ring.ts"
           }
         }
@@ -6926,7 +6926,7 @@
           "kind": "custom-element-definition",
           "name": "i2c-qr-code",
           "declaration": {
-            "name": "SlQrCode",
+            "name": "i2cQrCode",
             "module": "src/components/qr-code/qr-code.ts"
           }
         }
@@ -7031,7 +7031,7 @@
               "type": {
                 "text": "boolean"
               },
-              "description": "This will be true when the control is in an invalid state. Validity in range inputs is determined by the message\r\nprovided by the `setCustomValidity` method.",
+              "description": "This will be true when the control is in an invalid state. Validity in range inputs is determined by the message\nprovided by the `setCustomValidity` method.",
               "default": "false"
             },
             {
@@ -7183,7 +7183,7 @@
               "type": {
                 "text": "boolean"
               },
-              "description": "This will be true when the control is in an invalid state. Validity in range inputs is determined by the message\r\nprovided by the `setCustomValidity` method.",
+              "description": "This will be true when the control is in an invalid state. Validity in range inputs is determined by the message\nprovided by the `setCustomValidity` method.",
               "default": "false",
               "fieldName": "invalid"
             }
@@ -7211,7 +7211,7 @@
           "kind": "custom-element-definition",
           "name": "i2c-radio",
           "declaration": {
-            "name": "SlRadio",
+            "name": "i2cRadio",
             "module": "src/components/radio/radio.ts"
           }
         }
@@ -7308,7 +7308,7 @@
           "kind": "custom-element-definition",
           "name": "i2c-radio-group",
           "declaration": {
-            "name": "SlRadioGroup",
+            "name": "i2cRadioGroup",
             "module": "src/components/radio-group/radio-group.ts"
           }
         }
@@ -7471,7 +7471,7 @@
               "type": {
                 "text": "boolean"
               },
-              "description": "This will be true when the control is in an invalid state. Validity in range inputs is determined by the message\r\nprovided by the `setCustomValidity` method.",
+              "description": "This will be true when the control is in an invalid state. Validity in range inputs is determined by the message\nprovided by the `setCustomValidity` method.",
               "default": "false"
             },
             {
@@ -7644,7 +7644,7 @@
               "type": {
                 "text": "boolean"
               },
-              "description": "This will be true when the control is in an invalid state. Validity in range inputs is determined by the message\r\nprovided by the `setCustomValidity` method.",
+              "description": "This will be true when the control is in an invalid state. Validity in range inputs is determined by the message\nprovided by the `setCustomValidity` method.",
               "default": "false",
               "fieldName": "invalid"
             },
@@ -7708,7 +7708,7 @@
           "kind": "custom-element-definition",
           "name": "i2c-range",
           "declaration": {
-            "name": "SlRange",
+            "name": "i2cRange",
             "module": "src/components/range/range.ts"
           }
         }
@@ -8080,7 +8080,7 @@
           "kind": "custom-element-definition",
           "name": "i2c-rating",
           "declaration": {
-            "name": "SlRating",
+            "name": "i2cRating",
             "module": "src/components/rating/rating.ts"
           }
         }
@@ -8161,7 +8161,7 @@
               "type": {
                 "text": "'always' | 'auto'"
               },
-              "description": "When `auto`, values such as \"yesterday\" and \"tomorrow\" will be shown when possible. When `always`, values such as\r\n\"1 day ago\" and \"in 1 day\" will be shown.",
+              "description": "When `auto`, values such as \"yesterday\" and \"tomorrow\" will be shown when possible. When `always`, values such as\n\"1 day ago\" and \"in 1 day\" will be shown.",
               "default": "'auto'"
             },
             {
@@ -8209,7 +8209,7 @@
               "type": {
                 "text": "'always' | 'auto'"
               },
-              "description": "When `auto`, values such as \"yesterday\" and \"tomorrow\" will be shown when possible. When `always`, values such as\r\n\"1 day ago\" and \"in 1 day\" will be shown.",
+              "description": "When `auto`, values such as \"yesterday\" and \"tomorrow\" will be shown when possible. When `always`, values such as\n\"1 day ago\" and \"in 1 day\" will be shown.",
               "default": "'auto'",
               "fieldName": "numeric"
             },
@@ -8246,7 +8246,7 @@
           "kind": "custom-element-definition",
           "name": "i2c-relative-time",
           "declaration": {
-            "name": "SlRelativeTime",
+            "name": "i2cRelativeTime",
             "module": "src/components/relative-time/relative-time.ts"
           }
         }
@@ -8315,7 +8315,7 @@
           "kind": "custom-element-definition",
           "name": "i2c-resize-observer",
           "declaration": {
-            "name": "SlResizeObserver",
+            "name": "i2cResizeObserver",
             "module": "src/components/resize-observer/resize-observer.ts"
           }
         }
@@ -8342,7 +8342,7 @@
               "type": {
                 "text": "string"
               },
-              "description": "The aspect ratio of the embedded media in the format of `width:height`, e.g. `16:9`, `4:3`, or `1:1`. Ratios not in\r\nthis format will be ignored.",
+              "description": "The aspect ratio of the embedded media in the format of `width:height`, e.g. `16:9`, `4:3`, or `1:1`. Ratios not in\nthis format will be ignored.",
               "default": "'16:9'"
             },
             {
@@ -8361,7 +8361,7 @@
               "type": {
                 "text": "string"
               },
-              "description": "The aspect ratio of the embedded media in the format of `width:height`, e.g. `16:9`, `4:3`, or `1:1`. Ratios not in\r\nthis format will be ignored.",
+              "description": "The aspect ratio of the embedded media in the format of `width:height`, e.g. `16:9`, `4:3`, or `1:1`. Ratios not in\nthis format will be ignored.",
               "default": "'16:9'",
               "fieldName": "aspectRatio"
             },
@@ -8398,7 +8398,7 @@
           "kind": "custom-element-definition",
           "name": "i2c-responsive-media",
           "declaration": {
-            "name": "SlResponsiveMedia",
+            "name": "i2cResponsiveMedia",
             "module": "src/components/responsive-media/responsive-media.ts"
           }
         }
@@ -8475,14 +8475,14 @@
               "kind": "field",
               "name": "dropdown",
               "type": {
-                "text": "SlDropdown"
+                "text": "i2cDropdown"
               }
             },
             {
               "kind": "field",
               "name": "box",
               "type": {
-                "text": "SlDropdown"
+                "text": "i2cDropdown"
               }
             },
             {
@@ -8496,7 +8496,7 @@
               "kind": "field",
               "name": "menu",
               "type": {
-                "text": "SlMenu"
+                "text": "i2cMenu"
               }
             },
             {
@@ -8591,7 +8591,7 @@
               "type": {
                 "text": "number"
               },
-              "description": "The maximum number of tags to show when `multiple` is true. After the maximum, \"+n\" will be shown to indicate the\r\nnumber of additional items that are selected. Set to -1 to remove the limit.",
+              "description": "The maximum number of tags to show when `multiple` is true. After the maximum, \"+n\" will be shown to indicate the\nnumber of additional items that are selected. Set to -1 to remove the limit.",
               "default": "3"
             },
             {
@@ -8636,7 +8636,7 @@
               "type": {
                 "text": "boolean"
               },
-              "description": "Enable this option to prevent the panel from being clipped when the component is placed inside a container with\r\n`overflow: auto|scroll`.",
+              "description": "Enable this option to prevent the panel from being clipped when the component is placed inside a container with\n`overflow: auto|scroll`.",
               "default": "false"
             },
             {
@@ -8725,7 +8725,7 @@
                 {
                   "name": "item",
                   "type": {
-                    "text": "SlMenuItem"
+                    "text": "i2cMenuItem"
                   }
                 }
               ]
@@ -8868,7 +8868,7 @@
               "type": {
                 "text": "number"
               },
-              "description": "The maximum number of tags to show when `multiple` is true. After the maximum, \"+n\" will be shown to indicate the\r\nnumber of additional items that are selected. Set to -1 to remove the limit.",
+              "description": "The maximum number of tags to show when `multiple` is true. After the maximum, \"+n\" will be shown to indicate the\nnumber of additional items that are selected. Set to -1 to remove the limit.",
               "default": "3",
               "fieldName": "maxTagsVisible"
             },
@@ -8913,7 +8913,7 @@
               "type": {
                 "text": "boolean"
               },
-              "description": "Enable this option to prevent the panel from being clipped when the component is placed inside a container with\r\n`overflow: auto|scroll`.",
+              "description": "Enable this option to prevent the panel from being clipped when the component is placed inside a container with\n`overflow: auto|scroll`.",
               "default": "false",
               "fieldName": "hoist"
             },
@@ -9009,7 +9009,7 @@
           "kind": "custom-element-definition",
           "name": "i2c-select",
           "declaration": {
-            "name": "SlSelect",
+            "name": "i2cSelect",
             "module": "src/components/select/select.ts"
           }
         }
@@ -9092,7 +9092,7 @@
           "kind": "custom-element-definition",
           "name": "i2c-skeleton",
           "declaration": {
-            "name": "SlSkeleton",
+            "name": "i2cSkeleton",
             "module": "src/components/skeleton/skeleton.ts"
           }
         }
@@ -9150,7 +9150,7 @@
           "kind": "custom-element-definition",
           "name": "i2c-spinner",
           "declaration": {
-            "name": "SlSpinner",
+            "name": "i2cSpinner",
             "module": "src/components/spinner/spinner.ts"
           }
         }
@@ -9459,7 +9459,7 @@
           "kind": "custom-element-definition",
           "name": "i2c-switch",
           "declaration": {
-            "name": "SlSwitch",
+            "name": "i2cSwitch",
             "module": "src/components/switch/switch.ts"
           }
         }
@@ -9638,7 +9638,7 @@
           "kind": "custom-element-definition",
           "name": "i2c-tab",
           "declaration": {
-            "name": "SlTab",
+            "name": "i2cTab",
             "module": "src/components/tab/tab.ts"
           }
         }
@@ -9727,7 +9727,7 @@
               "kind": "field",
               "name": "activeTab",
               "type": {
-                "text": "SlTab"
+                "text": "i2cTab"
               },
               "privacy": "private"
             },
@@ -9751,7 +9751,7 @@
               "kind": "field",
               "name": "tabs",
               "type": {
-                "text": "SlTab[]"
+                "text": "i2cTab[]"
               },
               "privacy": "private",
               "default": "[]"
@@ -9760,7 +9760,7 @@
               "kind": "field",
               "name": "panels",
               "type": {
-                "text": "SlTabPanel[]"
+                "text": "i2cTabPanel[]"
               },
               "privacy": "private",
               "default": "[]"
@@ -9789,7 +9789,7 @@
               "type": {
                 "text": "'auto' | 'manual'"
               },
-              "description": "When set to auto, navigating tabs with the arrow keys will instantly show the corresponding tab panel. When set to\r\nmanual, the tab will receive focus but will not show until the user presses spacebar or enter.",
+              "description": "When set to auto, navigating tabs with the arrow keys will instantly show the corresponding tab panel. When set to\nmanual, the tab will receive focus but will not show until the user presses spacebar or enter.",
               "default": "'auto'"
             },
             {
@@ -9875,7 +9875,7 @@
                 {
                   "name": "tab",
                   "type": {
-                    "text": "SlTab"
+                    "text": "i2cTab"
                   }
                 },
                 {
@@ -9939,7 +9939,7 @@
               "type": {
                 "text": "'auto' | 'manual'"
               },
-              "description": "When set to auto, navigating tabs with the arrow keys will instantly show the corresponding tab panel. When set to\r\nmanual, the tab will receive focus but will not show until the user presses spacebar or enter.",
+              "description": "When set to auto, navigating tabs with the arrow keys will instantly show the corresponding tab panel. When set to\nmanual, the tab will receive focus but will not show until the user presses spacebar or enter.",
               "default": "'auto'",
               "fieldName": "activation"
             },
@@ -9979,7 +9979,7 @@
           "kind": "custom-element-definition",
           "name": "i2c-tab-group",
           "declaration": {
-            "name": "SlTabGroup",
+            "name": "i2cTabGroup",
             "module": "src/components/tab-group/tab-group.ts"
           }
         }
@@ -10073,7 +10073,7 @@
           "kind": "custom-element-definition",
           "name": "i2c-tab-panel",
           "declaration": {
-            "name": "SlTabPanel",
+            "name": "i2cTabPanel",
             "module": "src/components/tab-panel/tab-panel.ts"
           }
         }
@@ -10219,7 +10219,7 @@
           "kind": "custom-element-definition",
           "name": "i2c-tag",
           "declaration": {
-            "name": "SlTag",
+            "name": "i2cTag",
             "module": "src/components/tag/tag.ts"
           }
         }
@@ -10449,14 +10449,14 @@
               "type": {
                 "text": "boolean"
               },
-              "description": "This will be true when the control is in an invalid state. Validity is determined by props such as `type`,\r\n`required`, `minlength`, and `maxlength` using the browser's constraint validation API.",
+              "description": "This will be true when the control is in an invalid state. Validity is determined by props such as `type`,\n`required`, `minlength`, and `maxlength` using the browser's constraint validation API.",
               "default": "false"
             },
             {
               "kind": "field",
               "name": "autocapitalize",
               "type": {
-                "text": "| 'off'\r\n    | 'none'\r\n    | 'on'\r\n    | 'sentences'\r\n    | 'words'\r\n    | 'characters'\r\n    | 'off'\r\n    | 'none'\r\n    | 'on'\r\n    | 'sentences'\r\n    | 'words'\r\n    | 'characters'"
+                "text": "| 'off'\n    | 'none'\n    | 'on'\n    | 'sentences'\n    | 'words'\n    | 'characters'\n    | 'off'\n    | 'none'\n    | 'on'\n    | 'sentences'\n    | 'words'\n    | 'characters'"
               },
               "description": "The textarea's autocaptialize attribute."
             },
@@ -10795,14 +10795,14 @@
               "type": {
                 "text": "boolean"
               },
-              "description": "This will be true when the control is in an invalid state. Validity is determined by props such as `type`,\r\n`required`, `minlength`, and `maxlength` using the browser's constraint validation API.",
+              "description": "This will be true when the control is in an invalid state. Validity is determined by props such as `type`,\n`required`, `minlength`, and `maxlength` using the browser's constraint validation API.",
               "default": "false",
               "fieldName": "invalid"
             },
             {
               "name": "autocapitalize",
               "type": {
-                "text": "| 'off'\r\n    | 'none'\r\n    | 'on'\r\n    | 'sentences'\r\n    | 'words'\r\n    | 'characters'\r\n    | 'off'\r\n    | 'none'\r\n    | 'on'\r\n    | 'sentences'\r\n    | 'words'\r\n    | 'characters'"
+                "text": "| 'off'\n    | 'none'\n    | 'on'\n    | 'sentences'\n    | 'words'\n    | 'characters'\n    | 'off'\n    | 'none'\n    | 'on'\n    | 'sentences'\n    | 'words'\n    | 'characters'"
               },
               "description": "The textarea's autocaptialize attribute.",
               "fieldName": "autocapitalize"
@@ -10871,7 +10871,7 @@
           "kind": "custom-element-definition",
           "name": "i2c-textarea",
           "declaration": {
-            "name": "SlTextarea",
+            "name": "i2cTextarea",
             "module": "src/components/textarea/textarea.ts"
           }
         }
@@ -10972,9 +10972,9 @@
               "kind": "field",
               "name": "placement",
               "type": {
-                "text": "| 'top'\r\n    | 'top-start'\r\n    | 'top-end'\r\n    | 'right'\r\n    | 'right-start'\r\n    | 'right-end'\r\n    | 'bottom'\r\n    | 'bottom-start'\r\n    | 'bottom-end'\r\n    | 'left'\r\n    | 'left-start'\r\n    | 'left-end'"
+                "text": "| 'top'\n    | 'top-start'\n    | 'top-end'\n    | 'right'\n    | 'right-start'\n    | 'right-end'\n    | 'bottom'\n    | 'bottom-start'\n    | 'bottom-end'\n    | 'left'\n    | 'left-start'\n    | 'left-end'"
               },
-              "description": "The preferred placement of the tooltip. Note that the actual placement may vary as needed to keep the tooltip\r\ninside of the viewport.",
+              "description": "The preferred placement of the tooltip. Note that the actual placement may vary as needed to keep the tooltip\ninside of the viewport.",
               "default": "'top'"
             },
             {
@@ -11019,7 +11019,7 @@
               "type": {
                 "text": "string"
               },
-              "description": "Controls how the tooltip is activated. Possible options include `click`, `hover`, `focus`, and `manual`. Multiple\r\noptions can be passed by separating them with a space. When manual is used, the tooltip must be activated\r\nprogrammatically.",
+              "description": "Controls how the tooltip is activated. Possible options include `click`, `hover`, `focus`, and `manual`. Multiple\noptions can be passed by separating them with a space. When manual is used, the tooltip must be activated\nprogrammatically.",
               "default": "'hover focus'"
             },
             {
@@ -11132,9 +11132,9 @@
             {
               "name": "placement",
               "type": {
-                "text": "| 'top'\r\n    | 'top-start'\r\n    | 'top-end'\r\n    | 'right'\r\n    | 'right-start'\r\n    | 'right-end'\r\n    | 'bottom'\r\n    | 'bottom-start'\r\n    | 'bottom-end'\r\n    | 'left'\r\n    | 'left-start'\r\n    | 'left-end'"
+                "text": "| 'top'\n    | 'top-start'\n    | 'top-end'\n    | 'right'\n    | 'right-start'\n    | 'right-end'\n    | 'bottom'\n    | 'bottom-start'\n    | 'bottom-end'\n    | 'left'\n    | 'left-start'\n    | 'left-end'"
               },
-              "description": "The preferred placement of the tooltip. Note that the actual placement may vary as needed to keep the tooltip\r\ninside of the viewport.",
+              "description": "The preferred placement of the tooltip. Note that the actual placement may vary as needed to keep the tooltip\ninside of the viewport.",
               "default": "'top'",
               "fieldName": "placement"
             },
@@ -11179,7 +11179,7 @@
               "type": {
                 "text": "string"
               },
-              "description": "Controls how the tooltip is activated. Possible options include `click`, `hover`, `focus`, and `manual`. Multiple\r\noptions can be passed by separating them with a space. When manual is used, the tooltip must be activated\r\nprogrammatically.",
+              "description": "Controls how the tooltip is activated. Possible options include `click`, `hover`, `focus`, and `manual`. Multiple\noptions can be passed by separating them with a space. When manual is used, the tooltip must be activated\nprogrammatically.",
               "default": "'hover focus'",
               "fieldName": "trigger"
             }
@@ -11217,7 +11217,7 @@
           "kind": "custom-element-definition",
           "name": "i2c-tooltip",
           "declaration": {
-            "name": "SlTooltip",
+            "name": "i2cTooltip",
             "module": "src/components/tooltip/tooltip.ts"
           }
         }
@@ -11227,7 +11227,7 @@
   "package": {
     "name": "@i2c-style/i2c",
     "description": "i2c Inc Modern Web Components.",
-    "version": "1.0.0-beta.1",
+    "version": "0.0.1-beta.1",
     "author": "Faizan Haider",
     "homepage": "https://www.i2cinc.com/",
     "license": "MIT"

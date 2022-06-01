@@ -1,6 +1,6 @@
 import {
   switch_default
-} from "../../chunks/chunk.VNFPFKDW.js";
+} from "../../chunks/chunk.XKK4VRC6.js";
 import "../../chunks/chunk.BD26TKS4.js";
 import "../../chunks/chunk.5MED2A3H.js";
 import "../../chunks/chunk.I4TE3TJV.js";

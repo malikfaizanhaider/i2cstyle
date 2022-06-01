@@ -1,5 +1,5 @@
 import { LitElement } from 'lit';
-export default class SlAlert extends LitElement {
+export default class i2cAlert extends LitElement {
     static styles: import("lit").CSSResult;
     private autoHideTimeout;
     base: HTMLElement;
@@ -20,6 +20,6 @@ export default class SlAlert extends LitElement {
 }
 declare global {
     interface HTMLElementTagNameMap {
-        'i2c-alert': SlAlert;
+        'i2c-alert': i2cAlert;
     }
 }

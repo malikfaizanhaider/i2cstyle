@@ -1,5 +1,5 @@
 import { LitElement } from 'lit';
-export default class SlQrCode extends LitElement {
+export default class i2cQrCode extends LitElement {
     static styles: import("lit").CSSResult;
     canvas: HTMLElement;
     value: string;
@@ -15,6 +15,6 @@ export default class SlQrCode extends LitElement {
 }
 declare global {
     interface HTMLElementTagNameMap {
-        'i2c-qr-code': SlQrCode;
+        'i2c-qr-code': i2cQrCode;
     }
 }

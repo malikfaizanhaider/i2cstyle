@@ -1,6 +1,6 @@
 import {
   format_number_default
-} from "../../chunks/chunk.KYIRXJKY.js";
+} from "../../chunks/chunk.KNGLP57T.js";
 import "../../chunks/chunk.5PIDMFOE.js";
 import "../../chunks/chunk.IHGPZX35.js";
 export {

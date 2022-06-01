@@ -1,5 +1,5 @@
 import { LitElement } from 'lit';
-export default class SlTag extends LitElement {
+export default class i2cTag extends LitElement {
     static styles: import("lit").CSSResult;
     type: 'primary' | 'success' | 'info' | 'warning' | 'danger' | 'text';
     size: 'small' | 'medium' | 'large';
@@ -10,6 +10,6 @@ export default class SlTag extends LitElement {
 }
 declare global {
     interface HTMLElementTagNameMap {
-        'i2c-tag': SlTag;
+        'i2c-tag': i2cTag;
     }
 }

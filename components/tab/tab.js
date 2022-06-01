@@ -1,6 +1,6 @@
 import {
   tab_default
-} from "../../chunks/chunk.DSYOIDDS.js";
+} from "../../chunks/chunk.USGYED6T.js";
 import "../../chunks/chunk.I4TE3TJV.js";
 import "../../chunks/chunk.YXKHB4AC.js";
 import "../../chunks/chunk.VIWFLAGR.js";

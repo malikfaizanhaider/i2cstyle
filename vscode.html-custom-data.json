@@ -3,39 +3,6 @@
     {
       "attributes": [
         {
-          "name": "type",
-          "description": "The badge's type.",
-          "values": [
-            {
-              "name": "primary"
-            },
-            {
-              "name": "success"
-            },
-            {
-              "name": "info"
-            },
-            {
-              "name": "warning"
-            },
-            {
-              "name": "danger"
-            }
-          ]
-        },
-        {
-          "name": "pill",
-          "description": "Draws a pill-style badge with rounded edges."
-        },
-        {
-          "name": "pulse",
-          "description": "Makes the badge pulsate to draw attention."
-        }
-      ]
-    },
-    {
-      "attributes": [
-        {
           "name": "image",
           "description": "The image source to use for the avatar."
         },
@@ -97,7 +64,7 @@
         },
         {
           "name": "duration",
-          "description": "The length of time, in milliseconds, the alert will show before closing itself. If the user interacts with\r\nthe alert before it closes (e.g. moves the mouse over it), the timer will restart. Defaults to `Infinity`."
+          "description": "The length of time, in milliseconds, the alert will show before closing itself. If the user interacts with\nthe alert before it closes (e.g. moves the mouse over it), the timer will restart. Defaults to `Infinity`."
         }
       ]
     },
@@ -109,7 +76,7 @@
         },
         {
           "name": "play",
-          "description": "Plays the animation. When omitted, the animation will be paused. This prop will be automatically removed when the\r\nanimation finishes or gets canceled."
+          "description": "Plays the animation. When omitted, the animation will be paused. This prop will be automatically removed when the\nanimation finishes or gets canceled."
         },
         {
           "name": "delay",
@@ -125,7 +92,7 @@
         },
         {
           "name": "easing",
-          "description": "The easing function to use for the animation. This can be a Shoelace easing function or a custom easing function\r\nsuch as `cubic-bezier(0, 1, .76, 1.14)`."
+          "description": "The easing function to use for the animation. This can be a i2cInc easing function or a custom easing function\nsuch as `cubic-bezier(0, 1, .76, 1.14)`."
         },
         {
           "name": "end-delay",
@@ -145,7 +112,48 @@
         },
         {
           "name": "playback-rate",
-          "description": "Sets the animation's playback rate. The default is `1`, which plays the animation at a normal speed. Setting this\r\nto `2`, for example, will double the animation's speed. A negative value can be used to reverse the animation. This\r\nvalue can be changed without causing the animation to restart."
+          "description": "Sets the animation's playback rate. The default is `1`, which plays the animation at a normal speed. Setting this\nto `2`, for example, will double the animation's speed. A negative value can be used to reverse the animation. This\nvalue can be changed without causing the animation to restart."
+        }
+      ]
+    },
+    {
+      "attributes": [
+        {
+          "name": "type",
+          "description": "The badge's type.",
+          "values": [
+            {
+              "name": "primary"
+            },
+            {
+              "name": "success"
+            },
+            {
+              "name": "info"
+            },
+            {
+              "name": "warning"
+            },
+            {
+              "name": "danger"
+            }
+          ]
+        },
+        {
+          "name": "pill",
+          "description": "Draws a pill-style badge with rounded edges."
+        },
+        {
+          "name": "pulse",
+          "description": "Makes the badge pulsate to draw attention."
+        }
+      ]
+    },
+    {
+      "attributes": [
+        {
+          "name": "label",
+          "description": "A label to use for the button group's `aria-label` attribute."
         }
       ]
     },
@@ -257,14 +265,6 @@
     {
       "attributes": [
         {
-          "name": "label",
-          "description": "A label to use for the button group's `aria-label` attribute."
-        }
-      ]
-    },
-    {
-      "attributes": [
-        {
           "name": "name",
           "description": "The checkbox's name attribute."
         },
@@ -302,7 +302,7 @@
         },
         {
           "name": "format",
-          "description": "The format to use for the display value. If opacity is enabled, these will translate to HEXA, RGBA, and HSLA\r\nrespectively. The color picker will always accept user input in any format (including CSS color names) and convert\r\nit to the desired format.",
+          "description": "The format to use for the display value. If opacity is enabled, these will translate to HEXA, RGBA, and HSLA\nrespectively. The color picker will always accept user input in any format (including CSS color names) and convert\nit to the desired format.",
           "values": [
             {
               "name": "hex"
@@ -348,11 +348,11 @@
         },
         {
           "name": "invalid",
-          "description": "This will be true when the control is in an invalid state. Validity is determined by the `setCustomValidity()`\r\nmethod using the browser's constraint validation API."
+          "description": "This will be true when the control is in an invalid state. Validity is determined by the `setCustomValidity()`\nmethod using the browser's constraint validation API."
         },
         {
           "name": "hoist",
-          "description": "Enable this option to prevent the panel from being clipped when the component is placed inside a container with\r\n`overflow: auto|scroll`."
+          "description": "Enable this option to prevent the panel from being clipped when the component is placed inside a container with\n`overflow: auto|scroll`."
         },
         {
           "name": "opacity",
@@ -388,11 +388,11 @@
         },
         {
           "name": "label",
-          "description": "The dialog's label as displayed in the header. You should always include a relevant label even when using\r\n`no-header`, as it is required for proper accessibility."
+          "description": "The dialog's label as displayed in the header. You should always include a relevant label even when using\n`no-header`, as it is required for proper accessibility."
         },
         {
           "name": "no-header",
-          "description": "Disables the header. This will also remove the default close button, so please ensure you provide an easy,\r\naccessible way for users to dismiss the dialog."
+          "description": "Disables the header. This will also remove the default close button, so please ensure you provide an easy,\naccessible way for users to dismiss the dialog."
         }
       ]
     },
@@ -404,7 +404,7 @@
         },
         {
           "name": "label",
-          "description": "The drawer's label as displayed in the header. You should always include a relevant label even when using\r\n`no-header`, as it is required for proper accessibility."
+          "description": "The drawer's label as displayed in the header. You should always include a relevant label even when using\n`no-header`, as it is required for proper accessibility."
         },
         {
           "name": "placement",
@@ -426,11 +426,11 @@
         },
         {
           "name": "contained",
-          "description": "By default, the drawer slides out of its containing block (usually the viewport). To make the drawer slide out of\r\nits parent element, set this prop and add `position: relative` to the parent."
+          "description": "By default, the drawer slides out of its containing block (usually the viewport). To make the drawer slide out of\nits parent element, set this prop and add `position: relative` to the parent."
         },
         {
           "name": "no-header",
-          "description": "Removes the header. This will also remove the default close button, so please ensure you provide an easy,\r\naccessible way for users to dismiss the drawer."
+          "description": "Removes the header. This will also remove the default close button, so please ensure you provide an easy,\naccessible way for users to dismiss the drawer."
         }
       ]
     },
@@ -442,7 +442,7 @@
         },
         {
           "name": "placement",
-          "description": "The preferred placement of the dropdown panel. Note that the actual placement may vary as needed to keep the panel\r\ninside of the viewport.",
+          "description": "The preferred placement of the dropdown panel. Note that the actual placement may vary as needed to keep the panel\ninside of the viewport.",
           "values": [
             {
               "name": "top"
@@ -488,7 +488,7 @@
         },
         {
           "name": "stay-open-on-select",
-          "description": "By default, the dropdown is closed when an item is selected. This attribute will keep it open instead. Useful for\r\ncontrols that allow multiple selections."
+          "description": "By default, the dropdown is closed when an item is selected. This attribute will keep it open instead. Useful for\ncontrols that allow multiple selections."
         },
         {
           "name": "distance",
@@ -500,7 +500,7 @@
         },
         {
           "name": "hoist",
-          "description": "Enable this option to prevent the panel from being clipped when the component is placed inside a container with\r\n`overflow: auto|scroll`."
+          "description": "Enable this option to prevent the panel from being clipped when the component is placed inside a container with\n`overflow: auto|scroll`."
         }
       ]
     },
@@ -799,7 +799,7 @@
         },
         {
           "name": "label",
-          "description": "A description that gets read by screen readers and other assistive devices. For optimal accessibility, you should\r\nalways include a label that describes what the icon button does."
+          "description": "A description that gets read by screen readers and other assistive devices. For optimal accessibility, you should\nalways include a label that describes what the icon button does."
         },
         {
           "name": "disabled",
@@ -838,7 +838,7 @@
         },
         {
           "name": "allow-scripts",
-          "description": "Allows included scripts to be executed. You must ensure the content you're including is trusted, otherwise this\r\noption can lead to XSS vulnerabilities in your app!"
+          "description": "Allows included scripts to be executed. You must ensure the content you're including is trusted, otherwise this\noption can lead to XSS vulnerabilities in your app!"
         }
       ]
     },
@@ -956,7 +956,7 @@
         },
         {
           "name": "invalid",
-          "description": "This will be true when the control is in an invalid state. Validity is determined by props such as `type`,\r\n`required`, `minlength`, `maxlength`, and `pattern` using the browser's constraint validation API."
+          "description": "This will be true when the control is in an invalid state. Validity is determined by props such as `type`,\n`required`, `minlength`, `maxlength`, and `pattern` using the browser's constraint validation API."
         },
         {
           "name": "autocapitalize",
@@ -1143,7 +1143,7 @@
         },
         {
           "name": "invalid",
-          "description": "This will be true when the control is in an invalid state. Validity in range inputs is determined by the message\r\nprovided by the `setCustomValidity` method."
+          "description": "This will be true when the control is in an invalid state. Validity in range inputs is determined by the message\nprovided by the `setCustomValidity` method."
         }
       ]
     },
@@ -1183,7 +1183,7 @@
         },
         {
           "name": "invalid",
-          "description": "This will be true when the control is in an invalid state. Validity in range inputs is determined by the message\r\nprovided by the `setCustomValidity` method."
+          "description": "This will be true when the control is in an invalid state. Validity in range inputs is determined by the message\nprovided by the `setCustomValidity` method."
         },
         {
           "name": "min",
@@ -1269,7 +1269,7 @@
         },
         {
           "name": "numeric",
-          "description": "When `auto`, values such as \"yesterday\" and \"tomorrow\" will be shown when possible. When `always`, values such as\r\n\"1 day ago\" and \"in 1 day\" will be shown.",
+          "description": "When `auto`, values such as \"yesterday\" and \"tomorrow\" will be shown when possible. When `always`, values such as\n\"1 day ago\" and \"in 1 day\" will be shown.",
           "values": [
             {
               "name": "always"
@@ -1290,7 +1290,7 @@
       "attributes": [
         {
           "name": "aspect-ratio",
-          "description": "The aspect ratio of the embedded media in the format of `width:height`, e.g. `16:9`, `4:3`, or `1:1`. Ratios not in\r\nthis format will be ignored."
+          "description": "The aspect ratio of the embedded media in the format of `width:height`, e.g. `16:9`, `4:3`, or `1:1`. Ratios not in\nthis format will be ignored."
         },
         {
           "name": "fit",
@@ -1314,7 +1314,7 @@
         },
         {
           "name": "max-tags-visible",
-          "description": "The maximum number of tags to show when `multiple` is true. After the maximum, \"+n\" will be shown to indicate the\r\nnumber of additional items that are selected. Set to -1 to remove the limit."
+          "description": "The maximum number of tags to show when `multiple` is true. After the maximum, \"+n\" will be shown to indicate the\nnumber of additional items that are selected. Set to -1 to remove the limit."
         },
         {
           "name": "disabled",
@@ -1345,7 +1345,7 @@
         },
         {
           "name": "hoist",
-          "description": "Enable this option to prevent the panel from being clipped when the component is placed inside a container with\r\n`overflow: auto|scroll`."
+          "description": "Enable this option to prevent the panel from being clipped when the component is placed inside a container with\n`overflow: auto|scroll`."
         },
         {
           "name": "value",
@@ -1467,7 +1467,7 @@
         },
         {
           "name": "activation",
-          "description": "When set to auto, navigating tabs with the arrow keys will instantly show the corresponding tab panel. When set to\r\nmanual, the tab will receive focus but will not show until the user presses spacebar or enter.",
+          "description": "When set to auto, navigating tabs with the arrow keys will instantly show the corresponding tab panel. When set to\nmanual, the tab will receive focus but will not show until the user presses spacebar or enter.",
           "values": [
             {
               "name": "auto"
@@ -1628,7 +1628,7 @@
         },
         {
           "name": "invalid",
-          "description": "This will be true when the control is in an invalid state. Validity is determined by props such as `type`,\r\n`required`, `minlength`, and `maxlength` using the browser's constraint validation API."
+          "description": "This will be true when the control is in an invalid state. Validity is determined by props such as `type`,\n`required`, `minlength`, and `maxlength` using the browser's constraint validation API."
         },
         {
           "name": "autocapitalize",
@@ -1728,7 +1728,7 @@
         },
         {
           "name": "placement",
-          "description": "The preferred placement of the tooltip. Note that the actual placement may vary as needed to keep the tooltip\r\ninside of the viewport.",
+          "description": "The preferred placement of the tooltip. Note that the actual placement may vary as needed to keep the tooltip\ninside of the viewport.",
           "values": [
             {
               "name": "top"
@@ -1786,7 +1786,7 @@
         },
         {
           "name": "trigger",
-          "description": "Controls how the tooltip is activated. Possible options include `click`, `hover`, `focus`, and `manual`. Multiple\r\noptions can be passed by separating them with a space. When manual is used, the tooltip must be activated\r\nprogrammatically."
+          "description": "Controls how the tooltip is activated. Possible options include `click`, `hover`, `focus`, and `manual`. Multiple\noptions can be passed by separating them with a space. When manual is used, the tooltip must be activated\nprogrammatically."
         }
       ]
     }

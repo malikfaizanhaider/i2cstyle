@@ -1,5 +1,5 @@
 import { LitElement } from 'lit';
-export default class SlTabPanel extends LitElement {
+export default class i2cTabPanel extends LitElement {
     static styles: import("lit").CSSResult;
     private componentId;
     name: string;
@@ -9,6 +9,6 @@ export default class SlTabPanel extends LitElement {
 }
 declare global {
     interface HTMLElementTagNameMap {
-        'i2c-tab-panel': SlTabPanel;
+        'i2c-tab-panel': i2cTabPanel;
     }
 }

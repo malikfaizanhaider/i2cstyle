@@ -1,6 +1,6 @@
 import { LitElement } from 'lit';
-import type SlMenuItem from '../menu-item/menu-item';
-export default class SlMenu extends LitElement {
+import type i2cMenuItem from '../menu-item/menu-item';
+export default class i2cMenu extends LitElement {
     static styles: import("lit").CSSResult;
     menu: HTMLElement;
     defaultSlot: HTMLSlotElement;
@@ -9,8 +9,8 @@ export default class SlMenu extends LitElement {
     private typeToSelectTimeout;
     typeToSelect(key: string): void;
     syncItems(): void;
-    getActiveItem(): SlMenuItem;
-    setActiveItem(item: SlMenuItem): void;
+    getActiveItem(): i2cMenuItem;
+    setActiveItem(item: i2cMenuItem): void;
     handleClick(event: MouseEvent): void;
     handleKeyDown(event: KeyboardEvent): void;
     handleSlotChange(): void;
@@ -18,6 +18,6 @@ export default class SlMenu extends LitElement {
 }
 declare global {
     interface HTMLElementTagNameMap {
-        'i2c-menu': SlMenu;
+        'i2c-menu': i2cMenu;
     }
 }

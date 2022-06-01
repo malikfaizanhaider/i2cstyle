@@ -1,119 +1,119 @@
 import "./chunks/chunk.HAL7R4WT.js";
 import {
   tab_group_default
-} from "./chunks/chunk.RGERQE4K.js";
+} from "./chunks/chunk.5EGQOKBB.js";
 import {
   tab_panel_default
-} from "./chunks/chunk.POPGIPOA.js";
+} from "./chunks/chunk.URBP2DGO.js";
 import {
   tag_default
-} from "./chunks/chunk.IDWU3HAS.js";
+} from "./chunks/chunk.7OF7PAIH.js";
 import {
   textarea_default
-} from "./chunks/chunk.X36MIRXK.js";
+} from "./chunks/chunk.4SVMEN4R.js";
 import {
   tooltip_default
-} from "./chunks/chunk.MXAG2FIE.js";
+} from "./chunks/chunk.QH26P7K4.js";
 import "./chunks/chunk.QL5C2XOW.js";
 import {
   relative_time_default
-} from "./chunks/chunk.4MDZVHEZ.js";
+} from "./chunks/chunk.5ROFR37C.js";
 import {
   resize_observer_default
-} from "./chunks/chunk.TUG7JZGC.js";
+} from "./chunks/chunk.7S7TMOH7.js";
 import {
   responsive_media_default
-} from "./chunks/chunk.LQL6J2XV.js";
+} from "./chunks/chunk.D7PDLX2J.js";
 import {
   select_default
-} from "./chunks/chunk.7TRL5PGY.js";
+} from "./chunks/chunk.3HWCUGML.js";
 import {
   skeleton_default
-} from "./chunks/chunk.2NPUL3G6.js";
+} from "./chunks/chunk.DTUCYSRE.js";
 import {
   spinner_default
-} from "./chunks/chunk.FMZBE7V5.js";
+} from "./chunks/chunk.FEZTZYHC.js";
 import {
   switch_default
-} from "./chunks/chunk.VNFPFKDW.js";
+} from "./chunks/chunk.XKK4VRC6.js";
 import {
   tab_default
-} from "./chunks/chunk.DSYOIDDS.js";
+} from "./chunks/chunk.USGYED6T.js";
 import {
   menu_label_default
-} from "./chunks/chunk.UBKG242U.js";
+} from "./chunks/chunk.RSRFQX5M.js";
 import {
   progress_bar_default
-} from "./chunks/chunk.YRAORPR6.js";
+} from "./chunks/chunk.DVDHYJS2.js";
 import {
   progress_ring_default
-} from "./chunks/chunk.D5OWUEZJ.js";
+} from "./chunks/chunk.7JL7LO43.js";
 import {
   qr_code_default
-} from "./chunks/chunk.Q5LU2NUU.js";
-import {
-  radio_group_default
-} from "./chunks/chunk.UOUUBI6M.js";
+} from "./chunks/chunk.AMR7XL3F.js";
 import {
   radio_default
-} from "./chunks/chunk.SSRCB4JQ.js";
+} from "./chunks/chunk.J7IUUSPZ.js";
+import {
+  radio_group_default
+} from "./chunks/chunk.UFTLWOC3.js";
 import {
   range_default
-} from "./chunks/chunk.VIAFK2WX.js";
+} from "./chunks/chunk.5D6E3AQR.js";
 import {
   rating_default
-} from "./chunks/chunk.TN3YP7ED.js";
+} from "./chunks/chunk.LAV2TIA2.js";
 import {
   icon_button_default
-} from "./chunks/chunk.5V52OYFY.js";
+} from "./chunks/chunk.MGYUGBKE.js";
 import {
   image_comparer_default
-} from "./chunks/chunk.QF2LTSLX.js";
+} from "./chunks/chunk.ZMSP6VK7.js";
 import {
   include_default
-} from "./chunks/chunk.76YPXEUY.js";
+} from "./chunks/chunk.O3EVK7F4.js";
 import "./chunks/chunk.DTM5B7PO.js";
 import {
   input_default
-} from "./chunks/chunk.PRDR5UYL.js";
+} from "./chunks/chunk.ORK2F3P3.js";
 import "./chunks/chunk.LLZCD55S.js";
 import {
   menu_default
-} from "./chunks/chunk.HPHCDX2V.js";
+} from "./chunks/chunk.6EG7Y2Q4.js";
 import {
   menu_divider_default
-} from "./chunks/chunk.3OJC74BP.js";
+} from "./chunks/chunk.UXCMH7ED.js";
 import {
   menu_item_default
-} from "./chunks/chunk.MTZZ7QC4.js";
+} from "./chunks/chunk.XN5FUA5F.js";
 import {
   format_bytes_default
-} from "./chunks/chunk.7ZGPGBKC.js";
+} from "./chunks/chunk.67WMP4GH.js";
 import {
   format_date_default
-} from "./chunks/chunk.HMX7PXR5.js";
+} from "./chunks/chunk.ZMZWS3MV.js";
 import {
   format_number_default
-} from "./chunks/chunk.KYIRXJKY.js";
+} from "./chunks/chunk.KNGLP57T.js";
 import {
   card_default
-} from "./chunks/chunk.F3NCSGXE.js";
+} from "./chunks/chunk.UZW64PBY.js";
 import {
   checkbox_default
-} from "./chunks/chunk.2BJSEQ4C.js";
+} from "./chunks/chunk.GUKOXRDR.js";
 import {
   color_picker_default
-} from "./chunks/chunk.5X6FIAJE.js";
+} from "./chunks/chunk.XFPXQ2GS.js";
 import "./chunks/chunk.T56CG5BM.js";
 import "./chunks/chunk.DA3UDEH5.js";
 import "./chunks/chunk.ORQOX5KX.js";
 import {
   details_default
-} from "./chunks/chunk.BXKRBOEX.js";
+} from "./chunks/chunk.ELVCSJKO.js";
 import "./chunks/chunk.XAZSQ3AT.js";
 import {
   icon_default
-} from "./chunks/chunk.JTTAQFSC.js";
+} from "./chunks/chunk.5K67TIAC.js";
 import "./chunks/chunk.EPTJRW4G.js";
 import {
   registerIconLibrary,
@@ -128,42 +128,42 @@ import "./chunks/chunk.73PEGQ4K.js";
 import "./chunks/chunk.ARRH633M.js";
 import {
   dialog_default
-} from "./chunks/chunk.N5ZKSOFU.js";
+} from "./chunks/chunk.OCQST5YQ.js";
 import {
   drawer_default
-} from "./chunks/chunk.DBUVL7LO.js";
+} from "./chunks/chunk.ACMQZ4ME.js";
 import "./chunks/chunk.VEQH5HOK.js";
 import {
   dropdown_default
-} from "./chunks/chunk.HQYUESRW.js";
+} from "./chunks/chunk.H6WPWX7A.js";
 import "./chunks/chunk.GADG7AUG.js";
 import "./chunks/chunk.47KECY7E.js";
 import "./chunks/chunk.MMQCDOAH.js";
 import {
   form_default
-} from "./chunks/chunk.2RT77KM2.js";
+} from "./chunks/chunk.7KKP357K.js";
 import {
   alert_default
-} from "./chunks/chunk.JJ2Y4Q56.js";
+} from "./chunks/chunk.NMBKQRYJ.js";
 import "./chunks/chunk.NVGT36PI.js";
 import "./chunks/chunk.EVK2ASE6.js";
 import {
   animation_default
-} from "./chunks/chunk.DTED6Y4E.js";
+} from "./chunks/chunk.KRMHYFHL.js";
 import "./chunks/chunk.BD26TKS4.js";
 import {
   getAnimationNames,
   getEasingNames
 } from "./chunks/chunk.LVGT5UFI.js";
 import {
-  avatar_default
-} from "./chunks/chunk.4KIR2RXG.js";
-import {
   badge_default
-} from "./chunks/chunk.6MNR4FIA.js";
+} from "./chunks/chunk.NZCZNZK7.js";
+import {
+  avatar_default
+} from "./chunks/chunk.CUOQD72F.js";
 import {
   button_default
-} from "./chunks/chunk.PIXR6GQ7.js";
+} from "./chunks/chunk.UDEICJ3S.js";
 import "./chunks/chunk.FMCX45AD.js";
 import "./chunks/chunk.5MED2A3H.js";
 import "./chunks/chunk.I4TE3TJV.js";
@@ -171,59 +171,59 @@ import "./chunks/chunk.YXKHB4AC.js";
 import "./chunks/chunk.VIWFLAGR.js";
 import {
   button_group_default
-} from "./chunks/chunk.STLW5FEM.js";
+} from "./chunks/chunk.C3ROM6ZD.js";
 import "./chunks/chunk.5PIDMFOE.js";
 import "./chunks/chunk.IHGPZX35.js";
 export {
-  alert_default as SlAlert,
-  animation_default as SlAnimation,
-  avatar_default as SlAvatar,
-  badge_default as SlBadge,
-  button_default as SlButton,
-  button_group_default as SlButtonGroup,
-  card_default as SlCard,
-  checkbox_default as SlCheckbox,
-  color_picker_default as SlColorPicker,
-  details_default as SlDetails,
-  dialog_default as SlDialog,
-  drawer_default as SlDrawer,
-  dropdown_default as SlDropdown,
-  form_default as SlForm,
-  format_bytes_default as SlFormatBytes,
-  format_date_default as SlFormatDate,
-  format_number_default as SlFormatNumber,
-  icon_default as SlIcon,
-  icon_button_default as SlIconButton,
-  image_comparer_default as SlImageComparer,
-  include_default as SlInclude,
-  input_default as SlInput,
-  menu_default as SlMenu,
-  menu_divider_default as SlMenuDivider,
-  menu_item_default as SlMenuItem,
-  menu_label_default as SlMenuLabel,
-  progress_bar_default as SlProgressBar,
-  progress_ring_default as SlProgressRing,
-  qr_code_default as SlQrCode,
-  radio_default as SlRadio,
-  radio_group_default as SlRadioGroup,
-  range_default as SlRange,
-  rating_default as SlRating,
-  relative_time_default as SlRelativeTime,
-  resize_observer_default as SlResizeObserver,
-  responsive_media_default as SlResponsiveMedia,
-  select_default as SlSelect,
-  skeleton_default as SlSkeleton,
-  spinner_default as SlSpinner,
-  switch_default as SlSwitch,
-  tab_default as SlTab,
-  tab_group_default as SlTabGroup,
-  tab_panel_default as SlTabPanel,
-  tag_default as SlTag,
-  textarea_default as SlTextarea,
-  tooltip_default as SlTooltip,
   getAnimationNames,
   getBasePath,
   getEasingNames,
+  alert_default as i2cAlert,
+  animation_default as i2cAnimation,
+  avatar_default as i2cAvatar,
+  badge_default as i2cBadge,
+  button_default as i2cButton,
+  button_group_default as i2cButtonGroup,
+  card_default as i2cCard,
+  checkbox_default as i2cCheckbox,
+  color_picker_default as i2cColorPicker,
+  details_default as i2cDetails,
+  dialog_default as i2cDialog,
+  drawer_default as i2cDrawer,
+  dropdown_default as i2cDropdown,
+  form_default as i2cForm,
+  format_bytes_default as i2cFormatBytes,
+  format_date_default as i2cFormatDate,
+  format_number_default as i2cFormatNumber,
+  icon_default as i2cIcon,
+  icon_button_default as i2cIconButton,
+  image_comparer_default as i2cImageComparer,
+  include_default as i2cInclude,
+  input_default as i2cInput,
+  menu_default as i2cMenu,
+  menu_divider_default as i2cMenuDivider,
+  menu_item_default as i2cMenuItem,
+  menu_label_default as i2cMenuLabel,
+  progress_bar_default as i2cProgressBar,
+  progress_ring_default as i2cProgressRing,
+  qr_code_default as i2cQrCode,
+  radio_default as i2cRadio,
+  radio_group_default as i2cRadioGroup,
+  range_default as i2cRange,
+  rating_default as i2cRating,
+  relative_time_default as i2cRelativeTime,
+  resize_observer_default as i2cResizeObserver,
+  responsive_media_default as i2cResponsiveMedia,
+  select_default as i2cSelect,
+  skeleton_default as i2cSkeleton,
+  spinner_default as i2cSpinner,
+  switch_default as i2cSwitch,
+  tab_default as i2cTab,
+  tab_group_default as i2cTabGroup,
+  tab_panel_default as i2cTabPanel,
+  tag_default as i2cTag,
+  textarea_default as i2cTextarea,
+  tooltip_default as i2cTooltip,
   registerIconLibrary,
   setBasePath,
   unregisterIconLibrary

@@ -1,7 +1,7 @@
 import { LitElement } from 'lit';
-import type SlTab from '../tab/tab';
-import type SlTabPanel from '../tab-panel/tab-panel';
-export default class SlTabGroup extends LitElement {
+import type i2cTab from '../tab/tab';
+import type i2cTabPanel from '../tab-panel/tab-panel';
+export default class i2cTabGroup extends LitElement {
     static styles: import("lit").CSSResult;
     tabGroup: HTMLElement;
     body: HTMLElement;
@@ -19,15 +19,15 @@ export default class SlTabGroup extends LitElement {
     connectedCallback(): void;
     disconnectedCallback(): void;
     show(panel: string): void;
-    getAllTabs(includeDisabled?: boolean): SlTab[];
-    getAllPanels(): [SlTabPanel];
-    getActiveTab(): SlTab | undefined;
+    getAllTabs(includeDisabled?: boolean): i2cTab[];
+    getAllPanels(): [i2cTabPanel];
+    getActiveTab(): i2cTab | undefined;
     handleClick(event: MouseEvent): void;
     handleKeyDown(event: KeyboardEvent): void;
     handleScrollToStart(): void;
     handleScrollToEnd(): void;
     updateScrollControls(): void;
-    setActiveTab(tab: SlTab, options?: {
+    setActiveTab(tab: i2cTab, options?: {
         emitEvents?: boolean;
         scrollBehavior?: 'auto' | 'smooth';
     }): void;
@@ -40,6 +40,6 @@ export default class SlTabGroup extends LitElement {
 }
 declare global {
     interface HTMLElementTagNameMap {
-        'i2c-tab-group': SlTabGroup;
+        'i2c-tab-group': i2cTabGroup;
     }
 }
